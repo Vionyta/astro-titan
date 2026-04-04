@@ -35,144 +35,144 @@ import logo30 from '../assets/images/logos/vmware.png';
 import logo31 from '../assets/images/logos/Windows.png';
 
 export interface Logo {
-    src: ImageMetadata;
-    alt: string; // Accrediator
+	src: ImageMetadata;
+	alt: string; // Accrediator
 }
 
 export interface LogoList {
-    id: string;
-    logos: Logo[];
+	id: string;
+	logos: Logo[];
 }
 
 // Example logo lists with imported images
 export const logoLists: Record<string, LogoList> = {
-    main: {
-        id: 'main',
-        logos: [
-            {
-                src: logo1,
-                alt: 'Partner 1',
-            },
-            {
-                src: logo2,
-                alt: 'Partner 2',
-            },
-            {
-                src: logo3,
-                alt: 'Partner 3',
-            },
-            {
-                src: logo4,
-                alt: 'Partner 4',
-            },
-            {
-                src: logo5,
-                alt: 'Partner 5',
-            },
-            {
-                src: logo6,
-                alt: 'Partner 6',
-            },
-            {
-                src: logo7,
-                alt: 'Partner 7',
-            },
-            {
-                src: logo8,
-                alt: 'Partner 8',
-            },
-            {
-                src: logo9,
-                alt: 'Partner 9',
-            },
-            {
-                src: logo10,
-                alt: 'Partner 10',
-            },
-            {
-                src: logo11,
-                alt: 'Partner 11',
-            },
-            {
-                src: logo12,
-                alt: 'Partner 12',
-            },
-            {
-                src: logo13,
-                alt: 'Partner 13',
-            },
-            {
-                src: logo14,
-                alt: 'Partner 14',
-            },
-            {
-                src: logo15,
-                alt: 'Partner 15',
-            },
-            {
-                src: logo16,
-                alt: 'Partner 16',
-            },
-            {
-                src: logo17,
-                alt: 'Partner 17',
-            },
-            {
-                src: logo18,
-                alt: 'Partner 18',
-            },
-            {
-                src: logo19,
-                alt: 'Partner 19',
-            },
-            {
-                src: logo20,
-                alt: 'Partner 20',
-            },
-            {
-                src: logo21,
-                alt: 'Partner 21',
-            },
-            {
-                src: logo22,
-                alt: 'Partner 22',
-            },
-            {
-                src: logo23,
-                alt: 'Partner 23',
-            },
-            {
-                src: logo24,
-                alt: 'Partner 24',
-            },
-            {
-                src: logo25,
-                alt: 'Partner 25',
-            },
-            {
-                src: logo26,
-                alt: 'Partner 26',
-            },
-            {
-                src: logo27,
-                alt: 'Partner 27',
-            },
-            {
-                src: logo28,
-                alt: 'Partner 28',
-            },
-            {
-                src: logo29,
-                alt: 'Partner 29',
-            },
-            {
-                src: logo30,
-                alt: 'Partner 30',
-            },
-                        {
-                src: logo31,
-                alt: 'Partner 31',
-            },
-        ],
-    },
+	main: {
+		id: 'main',
+		logos: [
+			{
+				src: logo1,
+				alt: 'Partner 1',
+			},
+			{
+				src: logo2,
+				alt: 'Partner 2',
+			},
+			{
+				src: logo3,
+				alt: 'Partner 3',
+			},
+			{
+				src: logo4,
+				alt: 'Partner 4',
+			},
+			{
+				src: logo5,
+				alt: 'Partner 5',
+			},
+			{
+				src: logo6,
+				alt: 'Partner 6',
+			},
+			{
+				src: logo7,
+				alt: 'Partner 7',
+			},
+			{
+				src: logo8,
+				alt: 'Partner 8',
+			},
+			{
+				src: logo9,
+				alt: 'Partner 9',
+			},
+			{
+				src: logo10,
+				alt: 'Partner 10',
+			},
+			{
+				src: logo11,
+				alt: 'Partner 11',
+			},
+			{
+				src: logo12,
+				alt: 'Partner 12',
+			},
+			{
+				src: logo13,
+				alt: 'Partner 13',
+			},
+			{
+				src: logo14,
+				alt: 'Partner 14',
+			},
+			{
+				src: logo15,
+				alt: 'Partner 15',
+			},
+			{
+				src: logo16,
+				alt: 'Partner 16',
+			},
+			{
+				src: logo17,
+				alt: 'Partner 17',
+			},
+			{
+				src: logo18,
+				alt: 'Partner 18',
+			},
+			{
+				src: logo19,
+				alt: 'Partner 19',
+			},
+			{
+				src: logo20,
+				alt: 'Partner 20',
+			},
+			{
+				src: logo21,
+				alt: 'Partner 21',
+			},
+			{
+				src: logo22,
+				alt: 'Partner 22',
+			},
+			{
+				src: logo23,
+				alt: 'Partner 23',
+			},
+			{
+				src: logo24,
+				alt: 'Partner 24',
+			},
+			{
+				src: logo25,
+				alt: 'Partner 25',
+			},
+			{
+				src: logo26,
+				alt: 'Partner 26',
+			},
+			{
+				src: logo27,
+				alt: 'Partner 27',
+			},
+			{
+				src: logo28,
+				alt: 'Partner 28',
+			},
+			{
+				src: logo29,
+				alt: 'Partner 29',
+			},
+			{
+				src: logo30,
+				alt: 'Partner 30',
+			},
+			{
+				src: logo31,
+				alt: 'Partner 31',
+			},
+		],
+	},
 };

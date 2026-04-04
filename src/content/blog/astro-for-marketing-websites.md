@@ -1,15 +1,15 @@
 ---
-title: "Why Astro JS is Perfect for Marketing Websites"
-excerpt: "Discover why Astro JS is the ideal framework for building high-performance marketing websites"
-featuredImage: "./images/astro-marketing.jpg"
-publishDate: "2025-03-15"
+title: 'Why Astro JS is Perfect for Marketing Websites'
+excerpt: 'Discover why Astro JS is the ideal framework for building high-performance marketing websites'
+featuredImage: './images/astro-marketing.jpg'
+publishDate: '2025-03-15'
 publish: true
-categories: ["Astro JS", "Web Development"]
+categories: ['Astro JS', 'Web Development']
 
 seo:
-  title: "Why Astro JS is Perfect for Marketing Websites"
-  description: "Discover why Astro JS is the ideal framework for building high-performance marketing websites that convert visitors into customers"
-  image: "./images/astro-marketing.jpg"
+  title: 'Why Astro JS is Perfect for Marketing Websites'
+  description: 'Discover why Astro JS is the ideal framework for building high-performance marketing websites that convert visitors into customers'
+  image: './images/astro-marketing.jpg'
 ---
 
 ## The Marketing Website Challenge
@@ -80,4 +80,4 @@ Ready to build your next marketing site with Astro? Here are some steps to get s
 
 The days of compromising between marketing effectiveness and technical excellence are over. Astro JS provides the perfect foundation for modern marketing websites that are fast, discoverable, and conversion-focused.
 
-Our upcoming specialized themes for agencies, portfolios, and marketing sites will showcase even more ways Astro can power your digital presence. Stay tuned as we continue to expand the Titan Studio Themes collection with marketing-optimized designs built on the Astro foundation. 
+Our upcoming specialized themes for agencies, portfolios, and marketing sites will showcase even more ways Astro can power your digital presence. Stay tuned as we continue to expand the Titan Studio Themes collection with marketing-optimized designs built on the Astro foundation.

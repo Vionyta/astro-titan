@@ -1,4 +1,5 @@
 # Titan Core - Modern Astro Theme
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **Titan Core** is a high-performance, feature-rich theme for Astro JS, designed for modern websites, blogs, and portfolios. With beautiful UI components, multiple theme options, and a focus on performance, Titan Core helps you build stunning websites quickly.
@@ -77,8 +78,8 @@ Titan Core comes with 10 beautiful pre-configured themes inspired by Greek mytho
 
 ```typescript
 export const themeSetting = {
-  theme: 'zeus' // Choose one of the 10 available themes
-}
+  theme: 'zeus', // Choose one of the 10 available themes
+};
 ```
 
 ### Available Themes:
@@ -101,18 +102,17 @@ By default, Titan Core includes a theme switcher component that allows users to 
 1. Open `src/layouts/Layout.astro`
 2. Remove or comment out the ThemeSwitcher import:
    ```astro
-   // Remove this line
-   import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+   // Remove this line import ThemeSwitcher from "../components/ThemeSwitcher.astro";
    ```
 3. Remove the ThemeSwitcher component from the body:
    ```astro
    <body data-theme={theme}>
      <Header />
      <slot />
-     <Footer footerCta={footerCta} />
+     <Footer {footerCta} />
      <!-- Remove this line -->W
      <ThemeSwitcher />
-     
+
      <script>
        import AOS from 'aos';
        AOS.init({
@@ -140,13 +140,13 @@ Titan Core includes a wide range of components:
 
 ## 🛠️ Commands
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`          | Install dependencies                            |
-| `pnpm dev`          | Start local dev server at `localhost:4321`      |
-| `pnpm build`        | Build your production site to `./dist/`          |
-| `pnpm preview`      | Preview your build locally, before deploying     |
-| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| Command          | Action                                           |
+| :--------------- | :----------------------------------------------- |
+| `pnpm install`   | Install dependencies                             |
+| `pnpm dev`       | Start local dev server at `localhost:4321`       |
+| `pnpm build`     | Build your production site to `./dist/`          |
+| `pnpm preview`   | Preview your build locally, before deploying     |
+| `pnpm astro ...` | Run CLI commands like `astro add`, `astro check` |
 
 ## 📄 License
 

@@ -1,14 +1,14 @@
 ---
-name: "Dionysus"
-headshot: "./images/dionysus.jpg"
-jobTitle: "God of Wine"
+name: 'Dionysus'
+headshot: './images/dionysus.jpg'
+jobTitle: 'God of Wine'
 publish: true
 order: 7
-linkedin: "https://www.linkedin.com/in/dionysus/"
-linkedinUsername: "dionysus"
-email: "dionysus@titan-core.com"
-xSocial: "https://x.com/dionysus"
-xSocialUsername: "dionysus"
+linkedin: 'https://www.linkedin.com/in/dionysus/'
+linkedinUsername: 'dionysus'
+email: 'dionysus@titan-core.com'
+xSocial: 'https://x.com/dionysus'
+xSocialUsername: 'dionysus'
 ---
 
 Dionysus is the god of wine, music, and revelry. He is the son of Zeus and Semele. He is the husband of Ariadne. He is the father of the Furies. He is the grandfather of the Greek gods.
@@ -24,4 +24,3 @@ Dionysus is a strong leader who is not afraid to make tough decisions. He is a g
 ### Key Accomplishments
 
 Dionysus has overthrown his father, Zeus, and freed his siblings from their imprisonment. He has also sired many children with his many lovers. He is the king of the gods and the ruler of Mount Olympus.
-

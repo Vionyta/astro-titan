@@ -1,9 +1,9 @@
 ---
-title: "Privacy Policy"
-lastUpdated: "2024-03-04"
+title: 'Privacy Policy'
+lastUpdated: '2024-03-04'
 seo:
-  title: "Privacy Policy - Your Rights and Our Responsibilities"
-  description: "Learn how we collect, use, and protect your personal information in compliance with data protection regulations."
+  title: 'Privacy Policy - Your Rights and Our Responsibilities'
+  description: 'Learn how we collect, use, and protect your personal information in compliance with data protection regulations.'
 ---
 
 ## Introduction
@@ -81,4 +81,4 @@ We may update this Privacy Policy from time to time. We will notify you of any s
 If you have any questions about this Privacy Policy, please contact us at:
 
 - Email: privacy@example.com
-- Address: 123 Privacy Street, Data City, 12345 
+- Address: 123 Privacy Street, Data City, 12345

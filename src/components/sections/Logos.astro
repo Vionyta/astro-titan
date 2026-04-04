@@ -6,59 +6,54 @@ import { getPaddingClass, getBackgroundColor } from '@utils/styleUtils';
 import type { PaddingSize, ThemeColor } from '@utils/styleUtils';
 
 export interface Props {
-    content: {
-        eyebrow?: string;
-        //headline?: string;
-        //subheadline?: string;
-        logos: Logo[];
-    };
-    background?: ThemeColor;
-    padding?: PaddingSize;
-    paddingTop?: PaddingSize;
-    paddingBottom?: PaddingSize;
+	content: {
+		eyebrow?: string;
+		//headline?: string;
+		//subheadline?: string;
+		logos: Logo[];
+	};
+	background?: ThemeColor;
+	padding?: PaddingSize;
+	paddingTop?: PaddingSize;
+	paddingBottom?: PaddingSize;
 }
 
 const {
-    content: { eyebrow, logos }, //headline, subheadline,
-    background = 'base'
+	content: { eyebrow, logos }, //headline, subheadline,
+	background = 'base',
 } = Astro.props;
 
 const bgColor = getBackgroundColor(background);
-const paddingClass = getPaddingClass({ 
-    padding: Astro.props.padding,
-    paddingTop: Astro.props.paddingTop,
-    paddingBottom: Astro.props.paddingBottom 
+const paddingClass = getPaddingClass({
+	padding: Astro.props.padding,
+	paddingTop: Astro.props.paddingTop,
+	paddingBottom: Astro.props.paddingBottom,
 });
-
 ---
 
-<section class:list={["relative", bgColor, paddingClass]}>
-    <div class="site-container px-4 text-center">
-        {eyebrow && (
-            <Eyebrow 
-                text={eyebrow} 
-                background={background} 
-                className="text-center"
-            />
-        )}
-        <div class="flex flex-wrap justify-center gap-8">
-            {logos.map((logo, index) => (
-                <div 
-                    class="logo-wrapper flex justify-center items-center w-32 h-30"
-                    data-aos="fade-up"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
-                    data-aos-delay={index * 100}
-                >
-                    <Image 
-                        src={logo.src} 
-                        alt={logo.alt}
-                        class="h-32 md:h-30 w-auto transition-all duration-200 object-contain object-center opacity-100"
-                        width={240}
-                        height={100}
-                    />
-                </div>
-            ))}
-        </div>
-    </div>
+<section class:list={['relative', bgColor, paddingClass]}>
+	<div class="site-container px-4 text-center">
+		{eyebrow && <Eyebrow text={eyebrow} background={background} className="text-center" />}
+		<div class="flex flex-wrap justify-center gap-8">
+			{
+				logos.map((logo, index) => (
+					<div
+						class="logo-wrapper flex justify-center items-center w-32 h-30"
+						data-aos="fade-up"
+						data-aos-easing="linear"
+						data-aos-duration="1000"
+						data-aos-delay={index * 100}
+					>
+						<Image
+							src={logo.src}
+							alt={logo.alt}
+							class="h-32 md:h-30 w-auto transition-all duration-200 object-contain object-center opacity-100"
+							width={240}
+							height={100}
+						/>
+					</div>
+				))
+			}
+		</div>
+	</div>
 </section>

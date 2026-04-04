@@ -1,17 +1,18 @@
 ---
-name: "Hermes"
-headshot: "./images/hermes.jpg"
-jobTitle: "God of the Sun"
+name: 'Hermes'
+headshot: './images/hermes.jpg'
+jobTitle: 'God of the Sun'
 publish: true
 order: 9
-linkedin: "https://www.linkedin.com/in/hermes/"
-linkedinUsername: "hermes"
-email: "hermes@titan-core.com"
-xSocial: "https://x.com/hermes"
-xSocialUsername: "hermes"
+linkedin: 'https://www.linkedin.com/in/hermes/'
+linkedinUsername: 'hermes'
+email: 'hermes@titan-core.com'
+xSocial: 'https://x.com/hermes'
+xSocialUsername: 'hermes'
 ---
 
 ## The God of Trade and Travel
+
 Hermes is the god of trade, travel, and messengers. He is the son of Zeus and Maia. He is the brother of Apollo and Artemis. He is the husband of Aphrodite. He is the father of the Furies. He is the grandfather of the Greek gods.
 
 ### Early Life

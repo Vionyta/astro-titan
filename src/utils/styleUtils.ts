@@ -2,76 +2,76 @@ export type PaddingSize = 'small' | 'base' | 'large';
 export type ThemeColor = 'base' | 'light' | 'mild' | 'dark';
 
 interface PaddingOptions {
-    padding?: PaddingSize;
-    paddingTop?: PaddingSize;
-    paddingBottom?: PaddingSize;
+	padding?: PaddingSize;
+	paddingTop?: PaddingSize;
+	paddingBottom?: PaddingSize;
 }
 
 export const getPaddingClass = ({ padding, paddingTop, paddingBottom }: PaddingOptions): string => {
-    if (padding) return `py-${padding}`;
-    
-    const classes = [];
-    if (paddingTop) classes.push(`pt-${paddingTop}`);
-    if (paddingBottom) classes.push(`pb-${paddingBottom}`);
-    return classes.join(' ');
+	if (padding) return `py-${padding}`;
+
+	const classes = [];
+	if (paddingTop) classes.push(`pt-${paddingTop}`);
+	if (paddingBottom) classes.push(`pb-${paddingBottom}`);
+	return classes.join(' ');
 };
 
 export const getBackgroundColor = (background: ThemeColor = 'base'): string => {
-    const bgColors = {
-        base: 'bg-background-base',
-        light: 'bg-background-light',
-        mild: 'bg-background-mild',
-        dark: 'bg-background-dark'
-    };
-    return bgColors[background];
+	const bgColors = {
+		base: 'bg-background-base',
+		light: 'bg-background-light',
+		mild: 'bg-background-mild',
+		dark: 'bg-background-dark',
+	};
+	return bgColors[background];
 };
 
 export const getTextColor = (background: ThemeColor = 'base'): string => {
-    const textColors = {
-        base: 'text-body-base',
-        light: 'text-body-light',
-        mild: 'text-body-mild',
-        dark: 'text-body-dark'
-    };
-    return textColors[background];
+	const textColors = {
+		base: 'text-body-base',
+		light: 'text-body-light',
+		mild: 'text-body-mild',
+		dark: 'text-body-dark',
+	};
+	return textColors[background];
 };
 
 export const getHeadlineColor = (background: ThemeColor = 'base'): string => {
-    const headlineColors = {
-        base: 'text-headline',
-        light: 'text-headline-light',
-        mild: 'text-headline-mild',
-        dark: 'text-headline-dark'
-    };
-    return headlineColors[background];
+	const headlineColors = {
+		base: 'text-headline',
+		light: 'text-headline-light',
+		mild: 'text-headline-mild',
+		dark: 'text-headline-dark',
+	};
+	return headlineColors[background];
 };
 
 export const getEyebrowColor = (background: ThemeColor = 'base'): string => {
-    const eyebrowColors = {
-        base: 'text-eyebrow',
-        light: 'text-eyebrow-light',
-        mild: 'text-eyebrow-mild',
-        dark: 'text-eyebrow-dark'
-    };
-    return eyebrowColors[background];
+	const eyebrowColors = {
+		base: 'text-eyebrow',
+		light: 'text-eyebrow-light',
+		mild: 'text-eyebrow-mild',
+		dark: 'text-eyebrow-dark',
+	};
+	return eyebrowColors[background];
 };
 
 export const getInputBackgroundColor = (background: ThemeColor = 'base'): string => {
-    const inputBgColors = {
-        base: 'bg-input',
-        light: 'bg-input-light',
-        mild: 'bg-input-mild',
-        dark: 'bg-input-dark'
-    };
-    return inputBgColors[background];
+	const inputBgColors = {
+		base: 'bg-input',
+		light: 'bg-input-light',
+		mild: 'bg-input-mild',
+		dark: 'bg-input-dark',
+	};
+	return inputBgColors[background];
 };
 
 export const getInputTextColor = (background: ThemeColor = 'base'): string => {
-    const inputTextColors = {
-        base: 'text-input-text',
-        light: 'text-input-text-light',
-        mild: 'text-input-text-mild',
-        dark: 'text-input-text-dark'
-    };
-    return inputTextColors[background];
-}; 
+	const inputTextColors = {
+		base: 'text-input-text',
+		light: 'text-input-text-light',
+		mild: 'text-input-text-mild',
+		dark: 'text-input-text-dark',
+	};
+	return inputTextColors[background];
+};

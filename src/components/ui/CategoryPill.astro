@@ -1,11 +1,14 @@
 ---
 interface Props {
-  category: string;
+	category: string;
 }
 
 const { category } = Astro.props;
 ---
 
-<span class="px-2 py-1 text-sm rounded-sm bg-primary/10 text-primary border-primary border flex items-center justify-center leading-none font-medium">
-  {category}
-</span> 
+<span
+	class="px-2 py-1 text-sm rounded-sm bg-primary/10 text-primary border-primary border flex items-center justify-center leading-none font-medium"
+>
+	{category}
+</span>
+

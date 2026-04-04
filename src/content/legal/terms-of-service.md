@@ -1,9 +1,9 @@
 ---
-title: "Terms of Service"
-lastUpdated: "2024-03-04"
+title: 'Terms of Service'
+lastUpdated: '2024-03-04'
 seo:
-  title: "Terms of Service - Rules for Using Our Platform"
-  description: "Our terms of service outline the rules, guidelines, and legal agreements between you and our company."
+  title: 'Terms of Service - Rules for Using Our Platform'
+  description: 'Our terms of service outline the rules, guidelines, and legal agreements between you and our company.'
 ---
 
 ## Introduction
@@ -71,4 +71,4 @@ These Terms shall be governed by and construed in accordance with the laws of [Y
 If you have any questions about these Terms, please contact us at:
 
 - Email: legal@example.com
-- Address: 123 Legal Avenue, Terms City, 12345 
+- Address: 123 Legal Avenue, Terms City, 12345

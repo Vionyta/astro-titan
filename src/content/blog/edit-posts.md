@@ -1,22 +1,24 @@
 ---
-title: "How to edit blog posts in Astro"
-excerpt: "Learn how to edit posts in Astro"
-featuredImage: "./images/edit-posts.jpg"
-publishDate: "2025-02-22"
+title: 'How to edit blog posts in Astro'
+excerpt: 'Learn how to edit posts in Astro'
+featuredImage: './images/edit-posts.jpg'
+publishDate: '2025-02-22'
 publish: true
-categories: ["Theme Usage"]
+categories: ['Theme Usage']
 
 seo:
-  title: "How to edit posts in Astro"
-  description: "Learn how to edit posts in Astro"
+  title: 'How to edit posts in Astro'
+  description: 'Learn how to edit posts in Astro'
 ---
 
 ## Steps to Edit a Blog Post
 
 ### Accessing the File
+
 Navigate to your blog post file in the **src/content/blog/** directory. The filename typically matches your post's URL slug (e.g., my-first-post.md).
 
 ### Editing Frontmatter
+
 The frontmatter is the metadata section at the top of your markdown file, contained between the --- markers. Here's what you can modify:
 
 **title**: The post's main heading  
@@ -27,21 +29,21 @@ The frontmatter is the metadata section at the top of your markdown file, contai
 **categories**: Array of relevant categories
 
 ```javascript
-title: "How to edit blog posts in Astro"
-excerpt: "Learn how to edit posts in Astro"
-featuredImage: "./images/edit-posts.jpg"
-publishDate: "2024-03-10"
-publish: true
-categories: ["Theme Usage"]
+title: 'How to edit blog posts in Astro';
+excerpt: 'Learn how to edit posts in Astro';
+featuredImage: './images/edit-posts.jpg';
+publishDate: '2024-03-10';
+publish: true;
+categories: ['Theme Usage'];
 
-seo:
-  title: "Custom SEO Title (Optional)"
-  description: "Custom SEO Description (Optional)"
+seo: title: 'Custom SEO Title (Optional)';
+description: 'Custom SEO Description (Optional)';
 ```
 
 #### Image Paths
 
 For the `featuredImage`, use a relative path to the image in your content folder:
+
 - `"./images/my-image.jpg"` - Image in the blog/images folder
 
 #### SEO Settings

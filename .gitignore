@@ -12,6 +12,7 @@ build/
 .astro/
 .vercel/
 .netlify/
+.archive/*
 
 # Logs
 npm-debug.log*
@@ -65,3 +66,7 @@ Thumbs.db
 .gemini/
 .gemini_security/
 .gemini_tmp/
+
+# AI
+AGENT.md
+GEMINI.md

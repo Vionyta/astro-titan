@@ -1,16 +1,16 @@
 ---
-name: "Zeus"
-headshot: "./images/zeus.jpg"
-jobTitle: "God of Thunder"
+name: 'Zeus'
+headshot: './images/zeus.jpg'
+jobTitle: 'God of Thunder'
 publish: true
 order: 1
-linkedin: "https://www.linkedin.com/in/zeus/"
-linkedinUsername: "zeus"
-email: "zeus@titan-core.com"
-xSocial: "https://x.com/zeus"
-xSocialUsername: "zeus"
-github: "https://github.com/zeus"
-githubUsername: "zeus"
+linkedin: 'https://www.linkedin.com/in/zeus/'
+linkedinUsername: 'zeus'
+email: 'zeus@titan-core.com'
+xSocial: 'https://x.com/zeus'
+xSocialUsername: 'zeus'
+github: 'https://github.com/zeus'
+githubUsername: 'zeus'
 ---
 
 ## Our Leader

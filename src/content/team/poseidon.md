@@ -1,14 +1,14 @@
 ---
-name: "Poseidon"
-headshot: "./images/poseidon.jpg"
-jobTitle: "God of the Sea"
+name: 'Poseidon'
+headshot: './images/poseidon.jpg'
+jobTitle: 'God of the Sea'
 publish: true
 order: 10
-linkedin: "https://www.linkedin.com/in/poseidon/"
-linkedinUsername: "poseidon"
-email: "poseidon@titan-core.com"
-xSocial: "https://x.com/poseidon"
-xSocialUsername: "poseidon"
+linkedin: 'https://www.linkedin.com/in/poseidon/'
+linkedinUsername: 'poseidon'
+email: 'poseidon@titan-core.com'
+xSocial: 'https://x.com/poseidon'
+xSocialUsername: 'poseidon'
 ---
 
 ## The God of the Sea

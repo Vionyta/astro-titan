@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import { projSetting } from '@data/config';
+import PaginatedProjLayout from '@components/proj/PaginatedProjLayout.astro';
+export const prerender = true;
+
+// Get current page from URL, default to 1
+const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
+
+// Get all posts without any filtering
+const allPosts = await getCollection('proj');
+
+// Then apply filters if needed
+const filteredPosts = allPosts.filter((post) => {
+	return import.meta.env.DEV || post.data.project !== false;
+});
+
+// Sort posts by date
+const sortedPosts = filteredPosts.sort(
+	(a, b) => b.data.projectDate.valueOf() - a.data.projectDate.valueOf(),
+);
+
+// Calculate pagination
+const totalPosts = sortedPosts.length;
+const totalPages = Math.ceil(totalPosts / projSetting.postsPerPage);
+const start = (currentPage - 1) * projSetting.postsPerPage;
+const end = start + projSetting.postsPerPage;
+const paginatedPosts = sortedPosts.slice(start, end);
+---
+
+<PaginatedProjLayout
+	posts={paginatedPosts}
+	{currentPage}
+	{totalPages}
+	baseUrl="/projects"
+	title="Projects"
+	subtitle="Projects that Handle by Victor Ong"
+/>

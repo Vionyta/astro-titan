@@ -1,51 +1,53 @@
 ---
-import { getHeadlineColor, getInputBackgroundColor, getInputTextColor } from '../../../utils/styleUtils';
+import {
+	getHeadlineColor,
+	getInputBackgroundColor,
+	getInputTextColor,
+} from '../../../utils/styleUtils';
 import type { ThemeColor } from '../../../utils/styleUtils';
 
 interface Props {
-    label: string;
-    type?: 'text' | 'email' | 'tel' | 'password' | 'number';
-    id: string;
-    name: string;
-    placeholder?: string;
-    required?: boolean;
-    disabled?: boolean;
-    background?: ThemeColor;
-    class?: string;
+	label: string;
+	type?: 'text' | 'email' | 'tel' | 'password' | 'number';
+	id: string;
+	name: string;
+	placeholder?: string;
+	required?: boolean;
+	disabled?: boolean;
+	background?: ThemeColor;
+	class?: string;
 }
 
-const { 
-    label, 
-    type = 'text', 
-    id, 
-    name, 
-    placeholder = '', 
-    required = false,
-    disabled = false,
-    background = 'base',
-    class: className = ''
+const {
+	label,
+	type = 'text',
+	id,
+	name,
+	placeholder = '',
+	required = false,
+	disabled = false,
+	background = 'base',
+	class: className = '',
 } = Astro.props;
 
 const labelClass = getHeadlineColor(background);
 const inputBgClass = getInputBackgroundColor(background);
 const inputTextClass = getInputTextColor(background);
 ---
+
 <div class="form-group">
-    <label 
-        for={id} 
-        class={`block text-sm font-medium mb-1 ${labelClass}`}
-    >
-        {label}
-        {required && <span class="text-red-500">*</span>}
-    </label>
-    <input 
-        type={type}
-        id={id}
-        name={name}
-        placeholder={placeholder}
-        required={required}
-        disabled={disabled}
-        class={`
+	<label for={id} class={`block text-sm font-medium mb-1 ${labelClass}`}>
+		{label}
+		{required && <span class="text-red-500">*</span>}
+	</label>
+	<input
+		{type}
+		{id}
+		{name}
+		{placeholder}
+		{required}
+		{disabled}
+		class={`
             w-full px-4 py-2 
             ${inputBgClass}
             ${inputTextClass}
@@ -56,5 +58,6 @@ const inputTextClass = getInputTextColor(background);
             placeholder:text-body-base/50
             ${className}
         `}
-    />
-</div> 
+	/>
+</div>
+

@@ -1,15 +1,15 @@
 ---
-title: "Why Page Speed is Critical for SEO Success"
-excerpt: "Discover how website performance directly impacts your search engine rankings and user experience"
-featuredImage: "./images/page-speed-seo.jpg"
-publishDate: "2025-04-05"
+title: 'Why Page Speed is Critical for SEO Success'
+excerpt: 'Discover how website performance directly impacts your search engine rankings and user experience'
+featuredImage: './images/page-speed-seo.jpg'
+publishDate: '2025-04-05'
 publish: true
-categories: ["SEO", "Web Development"]
+categories: ['SEO', 'Web Development']
 
 seo:
-  title: "Why Page Speed is Critical for SEO Success"
-  description: "Learn how website loading speed affects your search rankings, user experience, and conversion rates"
-  image: "./images/page-speed-seo.jpg"
+  title: 'Why Page Speed is Critical for SEO Success'
+  description: 'Learn how website loading speed affects your search rankings, user experience, and conversion rates'
+  image: './images/page-speed-seo.jpg'
 ---
 
 ## The Speed-SEO Connection
@@ -65,6 +65,7 @@ Websites that load faster consistently rank higher in search results. A study by
 ### Improved Conversion Rates
 
 Every second counts when it comes to conversions:
+
 - 1-second delay reduces conversions by 7%
 - 2-second delay increases bounce rates by 103%
 - 3-second delay causes 44% of users to leave and visit a competitor
@@ -101,4 +102,4 @@ As mobile internet usage continues to grow and user expectations for instant exp
 
 In the competitive world of search rankings, page speed has evolved from a nice-to-have feature to a must-have foundation. By prioritizing performance with solutions like our Titan Core theme, you're not just improving technical metrics—you're boosting your visibility, enhancing user experience, and ultimately driving more conversions.
 
-Our upcoming specialized themes for agencies, portfolios, and marketing sites are all built with this speed-first philosophy, ensuring your SEO performance is optimized from day one. 
+Our upcoming specialized themes for agencies, portfolios, and marketing sites are all built with this speed-first philosophy, ensuring your SEO performance is optimized from day one.
