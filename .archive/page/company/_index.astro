@@ -1,0 +1,20 @@
+---
+//company > index.astro
+import Layout from '@layouts/Layout.astro';
+import InnerHero from '@components/sections/InnerHero.astro';
+import Company from '@components/sections/CompanyGrid.astro';
+
+const seoTitle = "Companies that we work on";
+const seoDescription = "Our team is made up of a diverse group of people who are passionate about building amazing websites with ease.";
+
+const heroContent = {
+    title: "My Job Experinces",
+    description: "Where I obtain my precious knowledge.",
+}
+
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+    <InnerHero content={heroContent}  />
+    <Company padding="base" />
+</Layout>
