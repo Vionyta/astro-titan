@@ -1,5 +1,5 @@
 export const siteConfig = {
-	companyName: 'Vionyta',
+	companyName: 'Victor Ong',
 	siteUrl: 'https://vionyta.com',
 	Socials: {
 		//xSocial: 'https://x.com/astrodotbuild',
