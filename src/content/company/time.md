@@ -9,12 +9,6 @@ coverage: 'Malaysia'
 order: 7
 ---
 
-### TIME dotCom Bhd (May 2013 - Sep 2016)
-
-- **Industry:** Fixed Broadband Telco
-- **Title:** Senior Engineer
-- **Scope:** Core Network / Service Engineer, Malaysia
-
 #### Responsibilities / Duties:
 
 - Engineered, planned, deployed, managed and secured core broadband infrastructure services (DNS, DHCP, AAA RADIUS/TACACS+, OpenLDAP, MySQL, BRAS) using primarily open-source platforms (FreeBSD, CentOS, Ubuntu) serving hundred thousands of users.
@@ -53,5 +47,3 @@ order: 7
 - DNS Attack Mitigation with opensource ACLs.
 - Application Security (MySQL basics)
 - Apply Opensource Threat Intelligence to DNS Application
-
----

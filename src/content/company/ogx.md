@@ -8,13 +8,6 @@ jobTitle: 'Associate Director of Services and Solutioning'
 coverage: 'Malaysia'
 order: 1
 ---
-
-### OGX Network Sdn Bhd (Contract: Feb 2024 - Feb 2025)
-
-- **Industry:** CyberSec Distributor
-- **Title:** Associate Director of Solutioning & Services
-- **Scope:** Management/Technical, Malaysia
-
 #### Responsibilities / Duties:
 
 - Provided strategic oversight for solution architecture, delivery governance, and post-sales services, reporting to IT Security Director.
@@ -51,5 +44,3 @@ order: 1
 - Security SIEM / SOC Concepts (NG-SIEM, Syslog)
 - Endpoint Security (EDR or XDR)
 - Network Detection and Respond (NDR)
-
----

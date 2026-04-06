@@ -9,12 +9,6 @@ coverage: 'Malaysia'
 order: 8
 ---
 
-### Packet One Network Sdn Bhd (Sep 2009 - Apr 2013)
-
-- **Industry:** Wireless Telco
-- **Title:** WiMAX Core Engineer
-- **Scope:** Telco and Network Core Engineer, Malaysia
-
 #### Responsibilities / Duties:
 
 Wimax Core Network Services, packet-switch. (Pre-4G technology. )
@@ -50,6 +44,7 @@ Wimax Core Network Services, packet-switch. (Pre-4G technology. )
 
 #### Cybersecurity Skills:
 
-Core Platform Hardening (Linux/BSD) AAA Security Architecture Network Security Concepts (Encrption) Application Management (Network Traffic Control with Cisco SCE8000)
-
----
+- Core Platform Hardening (Linux/BSD) 
+- AAA Security Architecture 
+- Network Security Concepts (Encrption) 
+- Application Management (Network Traffic Control with Cisco SCE8000)

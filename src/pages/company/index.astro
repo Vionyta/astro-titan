@@ -15,14 +15,14 @@ const companiesWithContent = await Promise.all(
 	}),
 );
 
-const title = 'Company History';
-const description = 'My professional journey across various organizations.';
+const title = 'My Carreer History in Detail';
+const description = 'Professional journey across various organizations, where I gain various precious knowledges.';
 
 const heroContent = {
 	title: title,
 	description: description,
 	backgroundImage: contactHeroImage,
-	overlayOpacity: 0.4,
+	overlayOpacity: 0.2,
 };
 
 const background = ['base', 'light', 'mild', 'dark'] as const;
@@ -30,7 +30,7 @@ const background = ['base', 'light', 'mild', 'dark'] as const;
 
 <Layout {title} {description}>
 	<InnerHero content={heroContent} />
-
+	<!-- Start list of companies -->
 	<section class="py-base bg-background">
 		<div class="site-container mx-auto px-4">
 			<div class="max-w-4xl mx-auto">
@@ -47,25 +47,28 @@ const background = ['base', 'light', 'mild', 'dark'] as const;
 											<h2 class="text-2xl md:text-3xl font-bold text-headline dark:text-headline mb-2">
 												{data.companyName}
 											</h2>
-											<div class="flex flex-wrap gap-2 items-center">
+											<div class="flex flex-wrap gap-3 items-center">
 												<span class="text-large font-bold text-primary">{data.jobTitle}</span>
 												<span class="text-gray-400">•</span>
 												<span class="text-large text-gray-500 dark:text-gray-1000">
 													{data.startDate} — {data.endDate}
 												</span>
 											</div>
-											<div class="flex flex-wrap gap-2">
-												<span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+											<div class="flex flex-wrap gap-3 items-center">
+												<p class="text-white">.</p>
+											</div>
+											<div class="flex flex-wrap gap-3">
+													<span class="px-4 py-1 rounded-full text-small font-medium bg-primary/10 text-primary border border-primary/20">
 													{data.type}
-												</span>
+													</span>
 												{data.industry && (
-													<span class="px-3 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
-														{data.industry}
+													<span class="px-4 py-1 rounded-full text-small font-medium bg-gray-80 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
+													{data.industry}
 													</span>
 												)}
 												{data.coverage && (
-													<span class="px-3 py-1 rounded-full text-xs font-medium bg-secondary/10 text-secondary border border-secondary/20">
-														{data.coverage}
+													<span class="px-4 py-1 rounded-full text-small font-medium bg-secondary/10 text-secondary border border-secondary/20">
+													{data.coverage}
 													</span>
 												)}
 											</div>

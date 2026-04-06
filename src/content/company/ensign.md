@@ -9,20 +9,13 @@ coverage: 'Malaysia'
 order: 3
 ---
 
-### Ensign InfoSecurity (Aug 2019 - Sep 2021)
-
-- **Industry:** CyberSec System Integrator / SOC
-- **Title:** Systems Integration Director
-- **Scope:** Management, Malaysia
-
 #### Responsibilities / Duties:
 
 - Spearheaded creation and expansion of 4 operational divisions (14 personnel):
-
-1.  Project Management Office,
-2.  Pre-Sales Solutioning/Architecture,
-3.  Network Security Engineering,
-4.  Network Security Support.
+    1.  Project Management Office,
+    2.  Pre-Sales Solutioning/Architecture,
+    3.  Network Security Engineering,
+    4.  Network Security Support.
 
 - Built Systems Integration (SI) business line from ground up (service offerings, playbooks, delivery models, KPIs, P&L accountability).
 - Oversaw end-to-end delivery of strategic cybersecurity programs (Govt, Critical Infrastructure, Private Sector) using vendors like FireEye (Trellix), Imperva, Menlo, illumio, Tenable, Gigamon, Darktrace, Netskope.
@@ -41,8 +34,7 @@ order: 3
 
 #### Key Achievements:
 
-- Successfully launched and scaled
-- Systems Integration business in Malaysia, contributing multi-million MYR annual revenue growth.
+- Successfully launched and scaled Systems Integration (SI) business in Malaysia, contributing multi-million MYR annual revenue growth.
 - Built full-stack delivery team (PMs, Engineers, Service Owners with customer success manager), reducing 3rd party delivery dependency by >70%.
 - Improved project profit margins by >150% via process refinement and resource optimization.
 - Introduced profitable in-house Advanced Hardware Replacement program (FireEye) with ROI in 7 months.
@@ -50,6 +42,14 @@ order: 3
 
 #### Cybersecurity Skills:
 
-Endpoint Security (FireEye, Cybereason, CrowdStrike) Network Visibility Delivery Platform (Gigamon, Netscout) Network Detection & Response (Darktrace) Vulnerability Management (Tenable) Advanced Threat Protection (ATP - FireEye) Micro-segmentation (illumio) Web Application Firewall (WAF) / Database Activity Monitoring (DAM) (Imperva) Secure Web Gateway (SWG) / SSL Inspection / RBI (Netskope) Frameworks: MITRE ATT&CK, PCI DSS, ZTA, OWASP Compliance: Malaysia PDPA (Act 709), BNM RMiT Policy
-
----
+- Endpoint Security (FireEye, Cybereason, CrowdStrike) 
+- Network Visibility Delivery Platform (Gigamon, Netscout) 
+- Network Detection & Response (Darktrace) 
+- Vulnerability Management (Tenable) 
+- Advanced Threat Protection (ATP - FireEye) 
+- Micro-segmentation (illumio)
+- Web Application Firewall (WAF) / Database Activity Monitoring (DAM) (Imperva) 
+- Secure Web Gateway (SWG) / 
+- SSL Inspection / RBI (Netskope) 
+- Frameworks: MITRE ATT&CK, PCI DSS, ZTA, OWASP 
+- Compliance: Malaysia PDPA (Act 709), BNM RMiT Policy

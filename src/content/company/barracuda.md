@@ -9,12 +9,6 @@ coverage: 'Regional'
 order: 2
 ---
 
-### Barracuda Networks (Sep 2021 - Oct 2023)
-
-- **Industry:** CyberSec Vendor
-- **Title:** Senior Presales Engineer
-- **Scope:** Technical Sales, Southeast Asia
-
 #### Responsibilities / Duties:
 
 - Served as regional presales technical authority (ASEAN+KR)
@@ -50,5 +44,3 @@ order: 2
 - Data Protection (Cloud/On-Prem Backup, Incident Response)
 - Cloud Security (Microsoft 365, Azure, AWS)
 - Frameworks: MITRE ATT&CK, Zero Trust, OWASP CISSP
-
----
