@@ -51,9 +51,9 @@ export const categories: Category[] = [
 		description: 'Cyber Security Domain.',
 	},
 	{
-		name: 'Banking and Finance Institute',
+		name: 'Finance Services Institute',
 		slug: 'fsi',
-		description: 'banking and finance institute.',
+		description: 'Finance Service Institute inclusive Banking, Gaming and Insurances.',
 	},
 ];
 

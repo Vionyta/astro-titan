@@ -41,16 +41,17 @@ const paddingClass = getPaddingClass({
 	<div class="site-container px-4">
 		{
 			(title || description) && (
-				<div class="text-center mb-16 max-w-3xl mx-auto">
+				<div class="text-center mb-8 max-w-3xl mx-auto">
 					{eyebrow && <Eyebrow text={eyebrow} background={background} />}
 					{title && (
-						<h2 class:list={[textColor]} data-aos="fade-up">
+						<h2 class:list={[textColor]} data-aos="fade-up" class="text-large font-bold">
 							{title}
 						</h2>
 					)}
 					{description && (
 						<p
 							class:list={['mt-4', textColor, 'opacity-90']}
+							class="text-base"
 							data-aos="fade-up"
 							data-aos-delay="100"
 						>
@@ -74,7 +75,7 @@ const paddingClass = getPaddingClass({
 					<div
 						class:list={[
 							'p-6 rounded-lg border border-black',
-							background === 'dark' ? 'bg-background-base/10' : 'bg-background/90',
+							background === 'dark' ? 'bg-indigo-400' : 'bg-indigo-200',
 							'flex flex-col',
 						]}
 						data-aos="fade-up"
@@ -89,7 +90,7 @@ const paddingClass = getPaddingClass({
 							<feature.icon size={24} class="text-white" />
 						</div>
 						<h3 class:list={['text-h4 mb-2', textColor]}>{feature.title}</h3>
-						<p class:list={['text-base', textColor, 'opacity-90']}>{feature.description}</p>
+						<p class:list={['text-sm', textColor, 'opacity-90']}>{feature.description}</p>
 					</div>
 				))
 			}

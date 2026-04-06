@@ -17,9 +17,9 @@ export const headerMenu: MenuItem[] = [
 	{ name: 'Projects', link: '/projects' },
 ];
 
-export const footerMenu: MenuItem[] = [{ name: 'Style Guide', link: '/style-guide' }];
+export const footerMenu: MenuItem[] = [{ name: 'Company Detail', link: '/company' },{ name: 'My Projects', link: '/projects' }];
 
-export const legalMenu: MenuItem[] = [
-	{ name: 'Privacy Policy', link: '/legal/privacy-policy' },
-	{ name: 'Terms of Service', link: '/legal/terms-of-service' },
-];
+//export const legalMenu: MenuItem[] = [
+//	{ name: 'Privacy Policy', link: '/legal/privacy-policy' },
+//	{ name: 'Terms of Service', link: '/legal/terms-of-service' },
+//];

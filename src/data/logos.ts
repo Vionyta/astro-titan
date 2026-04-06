@@ -4,7 +4,7 @@ import type { ImageMetadata } from 'astro';
 // Replace these imports with your actual logo files
 import logo1 from '../assets/images/logos/01_MMU_BE.png';
 import logo2 from '../assets/images/logos/isc2_cissp.png';
-import logo3 from '../assets/images/logos/Fireeye.jpg';
+import logo3 from '../assets/images/logos/astro.jpg';
 import logo4 from '../assets/images/logos/CrowdStrike.png';
 import logo5 from '../assets/images/logos/Barracuda.png';
 import logo6 from '../assets/images/logos/forcepoint_square.png';

@@ -22,12 +22,12 @@ interface Props {
 const { footerCta } = Astro.props;
 
 const defaultCta = {
-	title: 'Ready to get started?',
-	description: 'Join us today and transform your digital presence with our innovative solutions.',
-	hideCta: true,
+	title: 'Want to know more about my professional journey?',
+	description: 'Click here for detail.',
+	hideCta: false,
 	button: {
-		text: 'Contact Us',
-		link: '/contact',
+		text: 'Companies',
+		link: '/company',
 		target: '_self',
 	},
 };
@@ -36,20 +36,20 @@ const cta = footerCta || defaultCta;
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class={`bg-black text-white pb-small ${cta.hideCta ? 'pt-large' : ''}`}>
+<footer class={`bg-indigo-800 text-white pb-small ${cta.hideCta ? 'pt-large' : ''}`}>
 	<div class="site-container mx-auto px-4">
 		{
 			!cta.hideCta && (
-				<div class="text-center border-b border-background-light mb-12 py-small">
-					<h2 class="text-3xl font-bold mb-4" data-aos="fade-up">
+				<div class="bg-white rounded-lg border-indigo-700 text-center border-b mb-4 py-6">
+					<h2 class="text-indigo-700 text-3xl font-bold mb-4" data-aos="fade-up">
 						{cta.title}
 					</h2>
-					<p class="text-white mb-6 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+					<p class="text-indigo-700 mb-6 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
 						{cta.description}
 					</p>
 					<Button
 						href={cta.button.link}
-						variant="ghostLight"
+						variant="ghostFooter"
 						size="lg"
 						data-aos="fade-up"
 						data-aos-delay="200"
@@ -61,13 +61,16 @@ const currentYear = new Date().getFullYear();
 			)
 		}
 
-		<div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-background-light">
-			<div class="col-span-1">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-background-light">
+			<div class="col-span-1 justify-between">
 				<Logo variant="footer" />
-				<p class="mt-4 text-white">Empowering your digital journey with innovative solutions.</p>
+				<ul>
+				<li class="mt-1 text-white text-base font-bold underline">Contact</li>
+				<li class="mt-1 text-white text-sm">Tel: +855 98 449 299</li>
+				<li class="mt-1 text-white text-sm">Mail: waikitong168@gmail.com</li>
+				</ul>
 			</div>
-
-			<div class="col-span-1">
+			<div class="col-span-1 justify-between">
 				<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
 				<nav>
 					<ul class="space-y-2">
@@ -83,17 +86,18 @@ const currentYear = new Date().getFullYear();
 					</ul>
 				</nav>
 			</div>
+			<div class="col-span-1 justify-between"></div>
 		</div>
 
 		<div class="mt-8 flex flex-col md:flex-row justify-between items-center">
 			<div class="text-body-dark text-sm">
 				© {currentYear}
-				{siteConfig.companyName}. All rights reserved.
+				Victor Ong Wai Kit. All rights reserved.
 			</div>
 
-			<nav class="mt-4 md:mt-0">
+			<!-- <nav class="mt-4 md:mt-0">
 				<ul class="flex flex-wrap gap-6">
-					<!--{legalMenu.map(item => (
+					{legalMenu.map(item => (
             <li>
               <a 
                 href={item.link} 
@@ -102,9 +106,9 @@ const currentYear = new Date().getFullYear();
               </a>
             </li>
           ))}
-        </ul>-->
+        </ul>
 				</ul>
-			</nav>
+			</nav> -->
 		</div>
 	</div>
 </footer>
