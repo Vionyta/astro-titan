@@ -5,8 +5,8 @@ const { title, headers, rows } = Astro.props;
 
 <section>
 	<h2 class="text-5xl font-bold text-slate-900 mb-3">{title}</h2>
-	<div class="overflow-x-auto w-10/12 rounded-xl shadow-sm">
-		<table class="w-full text-left border-collapse bg-indigo-100">
+	<div class="overflow-x-auto w-full md:w-10/12 rounded-xl shadow-sm">
+		<table class="w-full md:w-full text-left border-collapse bg-indigo-100">
 			<thead class="bg-indigo-600 border-b border-indigo-300">
 				<tr>
 					{headers.map((header) => (
