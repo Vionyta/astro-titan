@@ -20,6 +20,7 @@ export const headerMenu: MenuItem[] = [
 
 export const footerMenu: MenuItem[] = [
 	{ name: 'Company Detail', link: '/company' },
+	{ name: 'My Certificates', link: '/cert' },
 	{ name: 'My Projects', link: '/projects' },
 ];
 
