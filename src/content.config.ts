@@ -93,4 +93,15 @@ const proj = defineCollection({
 		}),
 });
 
-export const collections = { blog, legal, company, proj };
+const cert = defineCollection({
+	loader: glob({ base: './src/content/cert', pattern: '**/*.md' }),
+	schema: z.object({
+		category: z.string(),
+		accreditor: z.string(),
+		certTitle: z.string(),
+		certYear: z.string(),
+		equivalent: z.boolean().optional(),
+	}),
+});
+
+export const collections = { blog, legal, company, proj, cert };

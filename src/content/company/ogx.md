@@ -8,6 +8,7 @@ jobTitle: 'Associate Director of Services and Solutioning'
 coverage: 'Malaysia'
 order: 1
 ---
+
 #### Responsibilities / Duties:
 
 - Provided strategic oversight for solution architecture, delivery governance, and post-sales services, reporting to IT Security Director.

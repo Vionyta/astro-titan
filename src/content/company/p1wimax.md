@@ -44,7 +44,7 @@ Wimax Core Network Services, packet-switch. (Pre-4G technology. )
 
 #### Cybersecurity Skills:
 
-- Core Platform Hardening (Linux/BSD) 
-- AAA Security Architecture 
-- Network Security Concepts (Encrption) 
+- Core Platform Hardening (Linux/BSD)
+- AAA Security Architecture
+- Network Security Concepts (Encrption)
 - Application Management (Network Traffic Control with Cisco SCE8000)

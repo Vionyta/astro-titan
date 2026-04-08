@@ -12,10 +12,10 @@ order: 3
 #### Responsibilities / Duties:
 
 - Spearheaded creation and expansion of 4 operational divisions (14 personnel):
-    1.  Project Management Office,
-    2.  Pre-Sales Solutioning/Architecture,
-    3.  Network Security Engineering,
-    4.  Network Security Support.
+  1.  Project Management Office,
+  2.  Pre-Sales Solutioning/Architecture,
+  3.  Network Security Engineering,
+  4.  Network Security Support.
 
 - Built Systems Integration (SI) business line from ground up (service offerings, playbooks, delivery models, KPIs, P&L accountability).
 - Oversaw end-to-end delivery of strategic cybersecurity programs (Govt, Critical Infrastructure, Private Sector) using vendors like FireEye (Trellix), Imperva, Menlo, illumio, Tenable, Gigamon, Darktrace, Netskope.
@@ -42,14 +42,14 @@ order: 3
 
 #### Cybersecurity Skills:
 
-- Endpoint Security (FireEye, Cybereason, CrowdStrike) 
-- Network Visibility Delivery Platform (Gigamon, Netscout) 
-- Network Detection & Response (Darktrace) 
-- Vulnerability Management (Tenable) 
-- Advanced Threat Protection (ATP - FireEye) 
+- Endpoint Security (FireEye, Cybereason, CrowdStrike)
+- Network Visibility Delivery Platform (Gigamon, Netscout)
+- Network Detection & Response (Darktrace)
+- Vulnerability Management (Tenable)
+- Advanced Threat Protection (ATP - FireEye)
 - Micro-segmentation (illumio)
-- Web Application Firewall (WAF) / Database Activity Monitoring (DAM) (Imperva) 
-- Secure Web Gateway (SWG) / 
-- SSL Inspection / RBI (Netskope) 
-- Frameworks: MITRE ATT&CK, PCI DSS, ZTA, OWASP 
+- Web Application Firewall (WAF) / Database Activity Monitoring (DAM) (Imperva)
+- Secure Web Gateway (SWG) /
+- SSL Inspection / RBI (Netskope)
+- Frameworks: MITRE ATT&CK, PCI DSS, ZTA, OWASP
 - Compliance: Malaysia PDPA (Act 709), BNM RMiT Policy

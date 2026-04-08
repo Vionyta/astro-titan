@@ -1,0 +1,138 @@
+---
+import Layout from '@layouts/Layout.astro';
+import InnerHero from '@components/sections/InnerHero.astro';
+import CertTable from '@components/CertTable.astro';
+import contactHeroImage from '@assets/images/contact-hero.jpg';
+
+const title = 'My Certificate or Education';
+const description = 'My certificates obtained over the years';
+
+const heroContent = {
+    title,
+    description,
+    backgroundImage: contactHeroImage,
+    overlayOpacity: 0.2,
+};
+
+// Table 1: 4 Columns [cite: 5, 6]
+const education = [
+    ["MMU (Cyberjaya)", "Bachelor of Engineering (Honours) Electrical", "2005", "Bachelor's Degree"],
+    ["SMJK Sam Tet", "STPM", "2000", "A Level / GCE Advanced Level"],
+    ["SMJK Sam Tet", "SPM", "1998", "O Level / GCSE"],
+    ["SMJK Sam Tet", "PMR", "1996", "Lower Secondary / Pre-O Level"],
+    ["SRJK Sam Tet", "UPSR", "1993", "-"]
+];
+
+// Table 2: 3 Columns [cite: 7, 8, 12, 13]
+const cybersecurity = [
+    ["(ISC)²","Certified Information Systems Security Professional (CISSP)","2022"],
+    ["A10 Networks","A10 Network Sales Associate","2024"],
+    ["FireEye"," Partner Technical Certification - FireEye Systems Engineer (FSE)","2019"],
+    ["Forcepoint"," Forcepoint DLP Administrator","2024"],
+    ["Forcepoint"," Forcepoint DLP System Engineer Certification Exam","2024"],
+    ["Forcepoint"," Forcepoint DSPM System Engineer Certification","2024"],
+    ["Forcepoint"," Forcepoint DSPM Administrator","2024"],
+    ["Fortinet"," NSE 1 Network Security Associate","2019"],
+    ["Gigamon"," GigaSALES","2016"],
+    ["Gigamon"," GigaPRO Associate","2016"],
+    ["Gigamon"," GigaTECH","2016"],
+    ["illumio"," Sales Accreditation Curriculum","2020"],
+    ["illumio"," Technical Sales Accreditation Curriculum","2020"],
+    ["illumio"," Illumio ASP Boot Camp 3-Day Standard v18.3ce #61265420","2020"],
+    ["illumio"," Illumio Core Boot Camp 3-Day #61265421","2020"],
+    ["Infoblox"," Security Competency – Technical Accreditation (SCT)","2017"],
+    ["LogRhythm"," LogRhythm Platform Administrator \-LRPA- Level I Exam 7.3","2019"],
+    ["LogRhythm"," 305 Analyst Product Training","2019"],
+    ["LogRhythm"," 306 Administration Product Training","2019"],
+    ["LogRhythm"," 330 LogRhythm Installation and Deployment Training","2019"],
+    ["SecureKi"," Automated Privileged Password Management (APPM)","2019"],
+    ["Tenable"," Tenable Certified Pre-Sales Architecture-SC","2019"],
+    ["Tenable"," Tenable.sc Certificate of Proficiency","2019"],
+    ["Tenable"," Tenable Certified Pre-Sales Engine IO","2020"],
+    ["Tenable"," Tenable Certified Pre-Sales Integrator-SC","2020"],
+    ["Tenable"," Tenable Cloud Security Administrator","2024"],
+    ["Tenable"," Partner Sales Engineer - Vulnerability Management","2024"],
+    ["Tenable"," Partner Sales Engineer - Attack Surface Management","2024"],
+    ["Tenable"," Partner Sales Engineer - Identity Exposure","2024"],
+    ["Tenable"," Partner Sales Engineer - Cloud Security","2024"]
+];
+
+// Table 3: 3 Columns [cite: 14, 15, 16, 17]
+const cloud = [
+    ["Alibaba","Alibaba Cloud Computing Elastic Architecture","2020"],
+    ["Alibaba","Alibaba Cloud Computing Analysis Architecture","2020"],
+    ["Google Cloud","Elastic Cloud Infrastructure: Containers and Services","2019"],
+    ["Google Cloud","Essential Cloud Infrastructure: Foundation","2019"],
+    ["Google Cloud","Elastic Cloud Infrastructure: Scaling and Automation","2019"],
+    ["Google Cloud","Essential Cloud Infrastructure: Core Services","2019"],
+    ["Google Cloud","Google Cloud Platform Fundamentals: Core Infrastructure","2019"]
+];
+
+const system = [
+    ["Infoblox","Foundation Technical Accreditation","2016"],
+    ["Infoblox","Core DDI Basic Configuration (CDBC) Accreditation","2016"],
+    ["Infoblox","Core DDI Intermediate Configuration (CDIC) Accreditation","2016"],
+    ["Infoblox","Core DDI Advanced Troubleshooting (CDAT) Accreditation","2017"],
+    ["Infoblox","Core Network Services Competency – Technical Accreditation (CNT)","2017"],
+    ["Red Hat","Red Hat Openstack Administration I","2016"],
+    ["Red Hat","Red Hat Openstack Administration II","2016"],
+    ["Red Hat","Red Hat Sales Engineer Specialist - Platform","2017"],
+    ["Red Hat","Red Hat Sales Engineer Specialist - Platform Migration","2017"],
+    ["Red Hat","Red Hat Sales Engineer Specialist - Red Hat Ceph Storage","2017"],
+    ["Red Hat","Red Hat Sales Engineer Specialist - Red Hat Gluster Storage","2017"],
+    ["Red Hat","Red Hat Delivery Specialist - Cloud Automation","2018"],
+    ["Red Hat","Red Hat Delivery Specialist - Cloud Management","2018"],
+    ["Red Hat","Red Hat Delivery Specialist - Infrastructure-as-a-Service (IaaS)","2018"],
+    ["Red Hat","Red Hat Delivery Specialist - Platform-as-a-Service (PaaS) Administration ","2018"]
+];
+
+const network = [
+    ["Cisco", "CCNA (CSCO11852241)", "2016"],
+    ["IPv6 Forum", "IPv6 Forum Certified Network Engineer (Gold)", "2016"],
+    ["IPv6 Forum", "IPv6 Forum Certified Network Engineer (Silver)", "2016"]
+];
+---
+
+<Layout {title} {description}>
+    <InnerHero content={heroContent} />
+
+    <section class="py-16 bg-white">
+        <div class="site-container mx-auto px-4 max-w-5xl">
+            <main class="space-y-16">
+                
+                <CertTable 
+                    title="Education" 
+                    headers={["Institute", "Level", "Year", "Equivalent"]} 
+                    rows={education} 
+                />
+
+                <!--<hr class="border-slate-700" /> -->
+
+                <CertTable 
+                    title="Certification - Cybersecurity" 
+                    headers={["Accreditor", "Title", "Year"]} 
+                    rows={cybersecurity} 
+                />
+
+                <CertTable 
+                    title="Certification - Cloud" 
+                    headers={["Accreditor", "Title", "Year"]} 
+                    rows={cloud} 
+                />
+
+                <CertTable 
+                    title="Certification - System" 
+                    headers={["Accreditor", "Title", "Year"]} 
+                    rows={system} 
+                />
+
+                <CertTable 
+                    title="Certification - Network" 
+                    headers={["Accreditor", "Title", "Year"]} 
+                    rows={network} 
+                />
+
+            </main>
+        </div>
+    </section>
+</Layout>

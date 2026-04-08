@@ -105,6 +105,7 @@ By default, Titan Core includes a theme switcher component that allows users to 
    // Remove this line import ThemeSwitcher from "../components/ThemeSwitcher.astro";
    ```
 3. Remove the ThemeSwitcher component from the body:
+
    ```astro
    <body data-theme={theme}>
      <Header />

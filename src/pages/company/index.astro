@@ -1,5 +1,4 @@
 ---
-//import "@styles/global.css";
 import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import InnerHero from '@components/sections/InnerHero.astro';
@@ -16,7 +15,8 @@ const companiesWithContent = await Promise.all(
 );
 
 const title = 'My Carreer History in Detail';
-const description = 'Professional journey across various organizations, where I gain various precious knowledges.';
+const description =
+	'Professional journey across various organizations, where I gain various precious knowledges.';
 
 const heroContent = {
 	title: title,
@@ -58,17 +58,17 @@ const background = ['base', 'light', 'mild', 'dark'] as const;
 												<p class="text-white">.</p>
 											</div>
 											<div class="flex flex-wrap gap-3">
-													<span class="px-4 py-1 rounded-full text-small font-medium bg-primary/10 text-primary border border-primary/20">
+												<span class="px-4 py-1 rounded-full text-small font-medium bg-primary/10 text-primary border border-primary/20">
 													{data.type}
-													</span>
+												</span>
 												{data.industry && (
 													<span class="px-4 py-1 rounded-full text-small font-medium bg-gray-80 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
-													{data.industry}
+														{data.industry}
 													</span>
 												)}
 												{data.coverage && (
 													<span class="px-4 py-1 rounded-full text-small font-medium bg-secondary/10 text-secondary border border-secondary/20">
-													{data.coverage}
+														{data.coverage}
 													</span>
 												)}
 											</div>

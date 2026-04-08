@@ -1,4 +1,16 @@
-import { Zap, Heart, Coffee, Smile, LandmarkIcon, Handshake, Building2, ListChecksIcon, ShieldHalf, NetworkIcon, SpeechIcon } from '@lucide/astro';
+import {
+	Zap,
+	Heart,
+	Coffee,
+	Smile,
+	LandmarkIcon,
+	Handshake,
+	Building2,
+	ListChecksIcon,
+	ShieldHalf,
+	NetworkIcon,
+	SpeechIcon,
+} from '@lucide/astro';
 
 // Define the LucideIcon type based on the structure of Lucide icons
 type LucideIcon = typeof Zap;

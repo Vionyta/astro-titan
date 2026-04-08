@@ -1,0 +1,35 @@
+---
+// src/components/CertTable.astro
+const { title, headers, rows } = Astro.props;
+---
+
+<section>
+	<h2 class="text-5xl font-bold text-slate-900 mb-3">{title}</h2>
+	<div class="overflow-x-auto w-10/12 rounded-xl shadow-sm">
+		<table class="w-full text-left border-collapse bg-indigo-100">
+			<thead class="bg-indigo-600 border-b border-indigo-300">
+				<tr>
+					{headers.map((header) => (
+					<th class="px-6 py-4 text-base font-semibold text-slate-100 uppercase tracking-wider">
+								{header}
+					</th>))}
+				</tr>
+			</thead>
+			<tbody class="divide-y divide-indigo-300">
+				{
+					rows.map((row) => (
+						<tr class="hover:bg-slate-50 text-slate-100 transition-colors">
+							{row.map((cell, index) => (
+								<td
+									class={`px-6 py-4 text-sm ${index === 0 && cell ? 'font-bold text-slate-900' : 'text-slate-600'}`}
+								>
+									{cell}
+								</td>
+							))}
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+</section>
