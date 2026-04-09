@@ -26,13 +26,13 @@ let seoImage: string | undefined = post.data.seo?.image;
 
 // If seoImage is provided but not an absolute URL, make it absolute
 if (seoImage && !seoImage.startsWith('http')) {
-	const siteUrl = import.meta.env.SITE || 'https://titan-core.vercel.app';
+	const siteUrl = import.meta.env.SITE || 'https://victorong.vionyta.com';
 	seoImage = new URL(seoImage.startsWith('/') ? seoImage : `/${seoImage}`, siteUrl).toString();
 }
 // If no SEO image is specified, but we have a featured image, use its URL
 else if (!seoImage && post.data.featuredImage) {
 	// For Astro image objects, we need to create an absolute URL
-	const siteUrl = import.meta.env.SITE || 'https://titan-core.vercel.app';
+	const siteUrl = import.meta.env.SITE || 'https://victorong.vionyta.com';
 	seoImage = new URL(post.data.featuredImage.src, siteUrl).toString();
 }
 ---

@@ -26,13 +26,13 @@ let seoImage: string | undefined = post.data.seo?.image;
 
 // If seoImage is provided but not an absolute URL, make it absolute
 if (seoImage && !seoImage.startsWith('http')) {
-	const siteUrl = import.meta.env.SITE || 'https://titan-core.vercel.app';
+	const siteUrl = import.meta.env.SITE || 'https://victorong.vionyta.com';
 	seoImage = new URL(seoImage.startsWith('/') ? seoImage : `/${seoImage}`, siteUrl).toString();
 }
 // If no SEO image is specified, but we have a featured image, use its URL
 else if (!seoImage && post.data.featuredImage) {
 	// For Astro image objects, we need to create an absolute URL
-	const siteUrl = import.meta.env.SITE || 'https://titan-core.vercel.app';
+	const siteUrl = import.meta.env.SITE || 'https://victorong.vionyta.com';
 	seoImage = new URL(post.data.featuredImage.src, siteUrl).toString();
 }
 ---
@@ -59,10 +59,11 @@ else if (!seoImage && post.data.featuredImage) {
 	<article class="site-container--small mx-auto px-4 prose relative z-10 pb-base">
 		<div class="mt-42 mb-12 text-center">
 			<h1>{post.data.title}</h1>
-			<div class="flex items-center justify-center gap-4 text-gray-600">
-				<Date date={post.data.projectDate} />
-				{
-					post.data.categories && (
+			<div class="text=base flex items-center justify-center gap-4 text-gray-600">
+				{post.data.projectYear}
+			</div>
+			<div class="text-sm">
+				{post.data.categories && (
 						<div class="flex flex-wrap gap-2">
 							{post.data.categories.map((category) => (
 								<CategoryPill category={category} />

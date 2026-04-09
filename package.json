@@ -7,6 +7,7 @@
 		"type": "git",
 		"url": "git+https://github.com/withastro/astro.git"
 	},
+	"overrides": { "vite": "^7" },
 	"scripts": {
 		"format": "prettier -w .",
 		"check": "astro check",

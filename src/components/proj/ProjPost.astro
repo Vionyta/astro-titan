@@ -16,17 +16,7 @@ interface Props {
 	index: number;
 }
 
-const {
-	title,
-	projectSizing,
-	excerpt,
-	featuredImage,
-	projectDate,
-	categories: postCategories,
-	slug,
-	descriptions,
-	index,
-} = Astro.props;
+const { title, projectSizing, excerpt, featuredImage, projectDate, categories: postCategories, slug, descriptions, index, } = Astro.props;
 
 // Validate categories against the valid categories
 const validCategories = postCategories.filter((categoryName: string) =>
@@ -40,64 +30,28 @@ const validCategories = postCategories.filter((categoryName: string) =>
 	data-aos="fade-up"
 	data-aos-delay={index * 100}
 >
-	<div
-		class="relative aspect-[16/9] overflow-hidden border-black border-b group-hover:border-primary transition-colors duration-300"
-	>
-		{
-			featuredImage && (
-				<Image
-					src={featuredImage}
-					alt=""
-					width={600}
-					height={338}
-					class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-				/>
-			)
-		}
-		<div
-			class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-		>
-		</div>
+	<div class="relative aspect-[16/9] overflow-hidden border-black border-b group-hover:border-primary transition-colors duration-300">
+		{ featuredImage && ( <Image src={featuredImage} alt="" width={600} height={338} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"/>)}
+	<div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 transition-opacity duration-300"> </div>
 	</div>
 
 	<div class="py-4 px-4 flex flex-col flex-grow relative">
 		{/* Date at the top */}
-		<div
-			class="text-sm text-gray-600 mb-3 group-hover:text-primary/80 transition-colors duration-300"
-		>
-			<Date date={projectDate} />
-		</div>
+		<div class="text-sm text-gray-600 mb-3 group-hover:text-primary/80 transition-colors duration-300"> {projectDate}</div>
 
-		<h2
-			class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
-		>
-			{title}
-		</h2>
-		<h2
-			class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
-		>
-			{projectSizing}
-		</h2>
-		<p
-			class="mt-2 mb-8 text-body-base line-clamp-4 flex-grow text-small group-hover:text-gray-700 transition-colors duration-300"
-		>
-			{excerpt}
-		</p>
+		<h2 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"> {title} </h2>
+		
+		<h2	class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"> {projectSizing} </h2>
+		
+		<p class="mt-2 mb-8 text-body-base line-clamp-4 flex-grow text-small group-hover:text-gray-700 transition-colors duration-300"> {excerpt} </p>
 
-		{/* Categories as hashtags at the bottom */}
-		<div class="absolute bottom-4 left-4 flex flex-wrap">
-			{
-				validCategories.map((categoryName) => (
-					<div class="category-tag">
-						{' '}
-						<HashtagCategory category={categoryName} />{' '}
-					</div>
-				))
-			}
+			{/* Categories as hashtags at the bottom */}
+			<div class="absolute bottom-4 left-4 flex flex-wrap">
+				{ validCategories.map((categoryName) => ( <div class="category-tag"> {' '} 
+				<HashtagCategory category={categoryName} />{' '}
+			</div> ))}
 		</div>
-		<div>
-			<p class="text-body-base text-small">{descriptions}</p>
-		</div>
+		<div><p class="text-body-base text-small">{descriptions}</p></div>
 	</div>
 </a>
 <script>
