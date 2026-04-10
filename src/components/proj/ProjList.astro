@@ -1,7 +1,7 @@
 ---
 import ProjPost from './ProjPost.astro';
 import type { CollectionEntry } from 'astro:content';
-import { categories } from '../../data/categories';
+import { categories } from '@data/categories';
 import { getCollection } from 'astro:content';
 
 interface Props { posts: CollectionEntry<'proj'>[]; currentCategory?: string; }

@@ -27,9 +27,9 @@ const isCurrentPage = (link: string) => {
 			class="flex justify-between items-center bg-white py-4 rounded-lg px-4 border-black border"
 		>
 			<Logo />
-			<nav class="relative flex items-center gap-2 lg:gap-8" aria-label="Site Navigation">
+			<nav class="relative flex items-center gap-2 xl:gap-1" aria-label="Site Navigation">
 				{/* Desktop Menu */}
-				<ul class="hidden lg:flex lg:gap-8 items-center">
+				<ul class="hidden xl:flex xl:gap-1 items-center">
 					{
 						headerMenu.map((item, index) => (
 							<li class="relative group">
@@ -37,10 +37,10 @@ const isCurrentPage = (link: string) => {
 									<a
 										href={item.link}
 										class:list={[
-											'text-small font-medium rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-nav-text-active',
+											'text-indigo-700 text-base font-medium rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-nav-text-active',
 											isCurrentPage(item.link)
-												? 'text-nav-text-current font-semibold'
-												: 'text-nav-text hover:text-nav-text-hover',
+												? 'text-indigo-700 text-nav-text-current font-semibold'
+												: 'text-indigo-400 text-nav-text hover:text-nav-text-hover',
 										]}
 										aria-current={isCurrentPage(item.link) ? 'page' : undefined}
 									>
@@ -74,10 +74,10 @@ const isCurrentPage = (link: string) => {
 												<a
 													href={child.link}
 													class:list={[
-														'block px-4 text-small py-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-nav-text-active',
+														'block px-4 text-base py-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-nav-text-active',
 														isCurrentPage(child.link)
-															? 'text-nav-text-current font-semibold'
-															: 'text-nav-text hover:text-nav-text-hover',
+															? 'text-indigo-700 text-nav-text-current font-semibold'
+															: 'text-indigo-400 text-nav-text hover:text-nav-text-hover',
 													]}
 													aria-current={isCurrentPage(child.link) ? 'page' : undefined}
 												>

@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import InnerHero from '@components/sections/InnerHero.astro';
-import contactHeroImage from '@assets/images/contact-hero.jpg';
+import contactHeroImage from '@assets/images/company-hero-wide.jpg';
 
 const companies = await getCollection('company');
 const sortedCompanies = companies.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
