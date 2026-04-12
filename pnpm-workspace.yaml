@@ -12,22 +12,13 @@ packages:
   - '!packages/astro/test/units/_temp-fixtures/*'
   - '!**/.vercel/**'
 
-autoInstallPeers: false
+autoInstallPeers: true
 
 linkWorkspacePackages: true
 
 minimumReleaseAge: 4320
 
 minimumReleaseAgeExclude:
-  - '@flue/*'
-  - '@astrojs/*'
-  - fast-xml-parser@5.3.8
-  - svelte@5.53.5
-  - fastify@5.8.1 || 5.8.3
-  - rollup@4.59.0
-  - undici@7.24.0
-  - smol-toml@1.6.1
-  - picomatch@4.0.4
 
 onlyBuiltDependencies:
   - esbuild
