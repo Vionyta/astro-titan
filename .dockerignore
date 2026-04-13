@@ -34,6 +34,8 @@ eslint.config.js
 prettier.config.js
 .prettierignore
 .editorconfig
+docker-compose*.yml
+Dockerfile
 
 # Documentation
 README.md
