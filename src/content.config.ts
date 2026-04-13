@@ -40,15 +40,15 @@ const proj = defineCollection({
 		}),
 });
 
-const cert = defineCollection({
-	loader: glob({ base: './src/content/cert', pattern: '**/*.md' }),
-	schema: z.object({
-		category: z.string(),
-		accreditor: z.string(),
-		certTitle: z.string(),
-		certYear: z.string(),
-		equivalent: z.boolean().optional(),
-	}),
-});
+//const cert = defineCollection({
+//	loader: glob({ base: './src/content/cert', pattern: '**/*.md' }),
+//	schema: z.object({
+//		category: z.string(),
+//		accreditor: z.string(),
+//		certTitle: z.string(),
+//		certYear: z.string(),
+//		equivalent: z.boolean().optional(),
+//	}),
+//});
 
-export const collections = { company, proj, cert };
+export const collections = { company, proj, };
