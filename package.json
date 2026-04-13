@@ -7,8 +7,10 @@
 		"type": "git",
 		"url": "git+https://github.com/withastro/astro.git"
 	},
-	"pnpm.overrides": {
-		"vite": "^7"
+	"pnpm": {
+		"overrides": {
+			"vite": "^7"
+		}
 	},
 	"scripts": {
 		"format": "prettier -w .",

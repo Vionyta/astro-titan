@@ -2,6 +2,7 @@
 node_modules/
 .pnp
 .pnp.js
+.pnpm-store/
 
 # Testing
 coverage/
@@ -13,6 +14,7 @@ build/
 .vercel/
 .netlify/
 .archive/*
+.vscode/
 
 # Logs
 npm-debug.log*

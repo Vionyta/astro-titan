@@ -1,5 +1,11 @@
 ---
 // src/components/CertTable.astro
+interface Props {
+	title: string;
+	headers: string[];
+	rows: (string | null | undefined)[][];
+}
+
 const { title, headers, rows } = Astro.props;
 ---
 

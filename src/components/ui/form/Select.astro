@@ -1,8 +1,8 @@
 ---
 import {
-	getTextColor,
+	//getTextColor,
 	getHeadlineColor,
-	getBackgroundColor,
+	//getBackgroundColor,
 	getInputBackgroundColor,
 	getInputTextColor,
 } from '../../../utils/styleUtils';
@@ -36,8 +36,8 @@ const {
 } = Astro.props;
 
 const labelClass = getHeadlineColor(background);
-const textClass = getTextColor(background);
-const bgClass = getBackgroundColor(background === 'dark' ? 'light' : 'base');
+//const textClass = getTextColor(background);
+//const bgClass = getBackgroundColor(background === 'dark' ? 'light' : 'base');
 const inputBgClass = getInputBackgroundColor(background);
 const inputTextClass = getInputTextColor(background);
 ---
