@@ -1,13 +1,14 @@
 # Gemini Context: Titan Core (Astro Theme)
 
 ## Project Overview
-**Titan Core** is a high-performance, feature-rich Astro JS theme designed for modern websites, blogs, and portfolios. It utilizes **Astro v5**, **Tailwind CSS v4**, and **AOS (Animate On Scroll)** to deliver a fast, responsive, and visually engaging user experience.
+**Titan Core** is a high-performance, feature-rich Astro JS theme designed for modern websites, blogs, and portfolios. It utilizes **Astro v5** - Updated to **Astro v6**, **Tailwind CSS v4**, and **AOS (Animate On Scroll)** to deliver a fast, responsive, and visually engaging user experience.
 
-- **Main Technologies**: Astro v5, Tailwind CSS v4, Lucide Icons, AOS, Alpine.js (implied).
+- **Main Technologies**: Astro v6, Tailwind CSS v4, Lucide Icons, AOS, Alpine.js (implied).
 - **Architecture**: Component-based (Modular UI), Content-driven (Astro Content Collections), and Theme-flexible (CSS Variables + Data Attributes).
 - **Theming**: Includes 10 pre-configured Greek mythology-inspired themes (e.g., Zeus, Poseidon, Hades).
 
 ## Building and Running
+The project environment is now at Windows 11 25H2, running on Docker.
 The project uses `pnpm` as the primary package manager.
 
 - **Install Dependencies**: `pnpm install`

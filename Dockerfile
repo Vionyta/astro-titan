@@ -1,0 +1,26 @@
+FROM node:22.12.0-alpine3.21 AS base
+WORKDIR /app
+RUN npm install -g pnpm@10.33.0 \
+    && pnpm config set --global update-notifier false
+
+FROM base AS builder
+COPY pnpm-lock.yaml pnpm-workspace.yaml package.json ./
+RUN pnpm install --no-frozen-lockfile
+COPY . .
+RUN pnpm run build
+
+FROM nginx:1.27.4-alpine3.21 AS runner
+RUN apk add --no-cache curl && rm -rf /var/cache/apk/*
+
+WORKDIR /usr/share/nginx/html
+
+COPY --chown=nginx:nginx --from=builder /app/dist .
+COPY --chown=nginx:nginx nginx/default.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 4321
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:4321/ || exit 1
+
+USER nginx
+CMD ["nginx", "-g", "daemon off;"]

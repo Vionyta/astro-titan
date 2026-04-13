@@ -1,6 +1,6 @@
 /** @type {import('prettier').Options} */
 export default {
-	printWidth: 100,
+	printWidth: 200,
 	semi: true,
 	singleQuote: true,
 	tabWidth: 2,
@@ -11,7 +11,7 @@ export default {
 		{
 			files: ['.*', '*.md', '*.toml', '*.yml'],
 			options: {
-				useTabs: false,
+				useTabs: true,
 			},
 		},
 		{
