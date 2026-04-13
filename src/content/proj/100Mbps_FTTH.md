@@ -19,20 +19,71 @@ descriptions: 'Deploy ASN Gateway to Southern and Central Region for Capacity Ex
 
 ## Components - Core Network Services
 
-### DNS
+### 01-DNS
 * **Operating System**  : "FreeBSD (UNIX)"
 * **Application**       : "BIND 9.5"
 * **Type**              : "Authoratative and Caching DNS for subscriber"
 * **Other**             : "MCMC Landing Page Redirection aka Website blocking using FQDN"
 * **Architecture**      : "[2 Auth + 2 Caching] per cluster/site x 3 sites with Quagga Anycast services installed"
 
+```mermaid
+architecture-beta
+    group dns01(cloud)[DNS Cluster 01]
+
+    service dns11(server)[DNS Auth11] in dns01
+    service dns12(server)[DNS Auth12] in dns01
+    service dns13(server)[DNS Cache13] in dns01
+    service dns14(server)[DNS Cache14] in dns01
+
+    dns11:L -- R:dns13
+    dns12:T -- B:dns11
+    dns14:T -- B:dns13
+
+    group dns02(cloud)[DNS Cluster 02]
+
+    service dns21(server)[DNS Auth21] in dns02
+    service dns22(server)[DNS Auth22] in dns02
+    service dns23(server)[DNS Cache23] in dns02
+    service dns24(server)[DNS Cache24] in dns02
+
+    dns21:L -- R:dns23
+    dns22:T -- B:dns21
+    dns24:T -- B:dns23
+
+    group dns03(cloud)[DNS Cluster 03]
+
+    service dns31(server)[DNS Auth31] in dns03
+    service dns32(server)[DNS Auth32] in dns03
+    service dns33(server)[DNS Cache33] in dns03
+    service dns34(server)[DNS Cache34] in dns03
+
+    dns31:L -- R:dns33
+    dns32:T -- B:dns31
+    dns34:T -- B:dns33
+
+    dns11:R -- L:dns23
+    dns21:R -- L:dns33
+
+```
+
+---
+
+
 ### DHCP
 
 ### openRadius
+The openRadius is the RADIUS server for authentication, authorization, and accounting (AAA) for the FTTO/FTTH network. It is used to authenticate users who access the FTTO/FTTH network with proper configure PPPoE speed profile. 
+
 
 ### mySQL
+The mySQL is the database server for the FTTO/FTTH network. It is used to store the user information, the PPPoE speed profile, and the accounting information. 
+
+Running on Centos with clustering and replication in place.
 
 ### Cacti Network Monitoring Service (NMS)
+The Cacti is the network monitoring service for the FTTO/FTTH network, as well as entire Network Routers/Switches/Edge Routers. It is used to monitor the network devices and the network services. 
+
+Customization were required to enable full monitoring of server hardware, OS Services, Network port utilizations, and more.
 
 ---
 

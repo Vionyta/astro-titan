@@ -31,8 +31,11 @@
 	},
 	"packageManager": "pnpm@10.33.0",
 	"dependencies": {
+		"@iconify-json/logos": "^1.2.11",
 		"aos": "^2.3.4",
 		"astro-icon": "^1.1.5",
+		"astro-mermaid": "^2.0.1",
+		"mermaid": "^11.14.0",
 		"tailwindcss": "^4.2.2"
 	},
 	"devDependencies": {
