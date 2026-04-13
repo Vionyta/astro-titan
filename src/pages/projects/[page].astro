@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { projSetting } from '@data/config';
+import { parseProjectDate } from '@utils/date';
 import PaginatedProjLayout from '@components/proj/PaginatedProjLayout.astro';
 export const prerender = true;
 
@@ -10,13 +11,15 @@ export async function getStaticPaths() {
 
 	// Filter posts
 	const filteredPosts = allPosts.filter((post) => {
-		return import.meta.env.DEV || post.data.project !== false;
+		return import.meta.env.DEV || post.data.publish !== false;
 	});
 
 	// Sort posts by date
-	const sortedPosts = filteredPosts.sort(
-		(a, b) => b.data.projectDate.valueOf() - a.data.projectDate.valueOf(),
-	);
+	const sortedPosts = filteredPosts.sort((a, b) => {
+		const dateA = parseProjectDate(a.data.projectDate);
+		const dateB = parseProjectDate(b.data.projectDate);
+		return dateB - dateA;
+	});
 
 	const totalPosts = sortedPosts.length;
 	const totalPages = Math.ceil(totalPosts / projSetting.postsPerPage);

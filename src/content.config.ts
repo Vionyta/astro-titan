@@ -32,6 +32,7 @@ const proj = defineCollection({
 		z.object({
 			title: z.string(),
 			projectSizing: z.string(),
+			excerpt: z.string(),
 			featuredImage: image().optional(),
 			projectDate: z.string().optional(),
 			publish: z.boolean().optional(),

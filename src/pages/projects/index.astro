@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { projSetting } from '@data/config';
+import { parseProjectDate } from '@utils/date';
 import PaginatedProjLayout from '@components/proj/PaginatedProjLayout.astro';
 export const prerender = true;
 
@@ -12,13 +13,16 @@ const allPosts = await getCollection('proj');
 
 // Then apply filters if needed
 const filteredPosts = allPosts.filter((post) => {
-	return import.meta.env.DEV || post.data.project !== false;
+	return import.meta.env.DEV || post.data.publish !== false;
 });
 
 // Sort posts by date
-const sortedPosts = filteredPosts.sort(
-	(a, b) => b.data.projectDate.valueOf() - a.data.projectDate.valueOf(),
-);
+ const sortedPosts = filteredPosts.sort((a, b) => {
+	const dateA = parseProjectDate(a.data.projectDate);
+	const dateB = parseProjectDate(b.data.projectDate);
+	return dateB - dateA;
+});
+
 
 // Calculate pagination
 const totalPosts = sortedPosts.length;

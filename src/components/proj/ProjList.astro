@@ -67,7 +67,8 @@ const activeCategories = categories.filter((category) =>
 						projectSizing={post.data.projectSizing}
 						excerpt={post.data.excerpt}
 						featuredImage={post.data.featuredImage || ''}
-						projectDate={post.data.projectDate}
+						projectDate={post.data.projectDate || ''}
+						descriptions={post.data.descriptions || ''}
 						categories={post.data.categories || []}
 						slug={post.id}
 						index={index}
