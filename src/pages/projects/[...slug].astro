@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import CategoryPill from '@components/ui/CategoryPill.astro';
-//import Date from '@components/ui/Date.astro';
+import Date from '@components/ui/Date.astro';
 import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
@@ -34,14 +34,7 @@ if (post.data.featuredImage) {
 		{
 			post.data.featuredImage && (
 				<>
-					<Image
-						src={post.data.featuredImage}
-						alt=""
-						width={1920}
-						height={1080}
-						class="w-full h-full object-cover grayscale opacity-20"
-						quality={60}
-					/>
+					<Image src={post.data.featuredImage} alt="" width={1920} height={1080} class="w-full h-full object-cover grayscale opacity-20" quality={60} />
 					<div class="absolute inset-0 bg-primary/10 backdrop-blur-md" />
 				</>
 			)
@@ -55,7 +48,8 @@ if (post.data.featuredImage) {
 				{post.data.projectDate}
 			</div>
 			<div class="text-sm">
-				{post.data.categories && (
+				{
+					post.data.categories && (
 						<div class="flex flex-wrap gap-2">
 							{post.data.categories.map((category) => (
 								<CategoryPill category={category} />
@@ -66,19 +60,7 @@ if (post.data.featuredImage) {
 			</div>
 		</div>
 
-		{
-			post.data.featuredImage && (
-				<Image
-					src={post.data.featuredImage}
-					alt=""
-					width={1200}
-					height={675}
-					class="w-full h-auto rounded-lg border mb-12 border-black"
-					quality={80}
-					format="webp"
-				/>
-			)
-		}
+		{post.data.featuredImage && <Image src={post.data.featuredImage} alt="" width={1200} height={675} class="w-full h-auto rounded-lg border mb-12 border-black" quality={80} format="webp" />}
 
 		<div class="mt-8">
 			<Content />
