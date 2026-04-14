@@ -1,11 +1,11 @@
 {
-	"name": "titan-core",
+	"name": "victor-v2.3",
 	"type": "module",
-	"version": "2.1.0",
+	"version": "2.3.0",
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/withastro/astro.git"
+		"url": "https://github.com/withastro/astro.git"
 	},
 	"pnpm": {
 		"overrides": {
