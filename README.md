@@ -111,7 +111,7 @@ By default, Titan Core includes a theme switcher component that allows users to 
      <Header />
      <slot />
      <Footer {footerCta} />
-     <!-- Remove this line -->W
+     <!-- Remove this line -->
      <ThemeSwitcher />
 
      <script>
