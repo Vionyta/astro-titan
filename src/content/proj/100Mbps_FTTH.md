@@ -19,7 +19,7 @@ descriptions: 'Deploy ASN Gateway to Southern and Central Region for Capacity Ex
 
 ## Components - Core Network Services
 
-### 01-DNS
+### 01-ISC DNS BIND 9.5
 * **Operating System**  : "FreeBSD (UNIX)"
 * **Application**       : "BIND 9.5"
 * **Type**              : "Authoratative and Caching DNS for subscriber"
@@ -63,24 +63,37 @@ architecture-beta
 
     dns11:R -- L:dns23
     dns21:R -- L:dns33
-
 ```
 
 ---
 
+### 02-ISC DHCP
+* **Operating System**  : "Centoes 6+"
+* **Application**       : "ISC DHCP"
+* **Type**              : "DHCP Server for Malaysia Satelite TV Box"
+* **Other**             : "This DHCP solely for Astro Malaysia (Customer)"
+* **Architecture**      : "2 unit DHCP for HA purposes"
 
-### DHCP
+```mermaid
+flowchart LR
+    1[DHCP1] & DHCP2 --> Switch1 & Switch2
+```
 
-### openRadius
+---
+
+### 03-openRadius
 The openRadius is the RADIUS server for authentication, authorization, and accounting (AAA) for the FTTO/FTTH network. It is used to authenticate users who access the FTTO/FTTH network with proper configure PPPoE speed profile. 
 
+---
 
-### mySQL
+### 04-mySQL Database
 The mySQL is the database server for the FTTO/FTTH network. It is used to store the user information, the PPPoE speed profile, and the accounting information. 
 
 Running on Centos with clustering and replication in place.
 
-### Cacti Network Monitoring Service (NMS)
+---
+
+### 05-Cacti Network Monitoring Service (NMS)
 The Cacti is the network monitoring service for the FTTO/FTTH network, as well as entire Network Routers/Switches/Edge Routers. It is used to monitor the network devices and the network services. 
 
 Customization were required to enable full monitoring of server hardware, OS Services, Network port utilizations, and more.
