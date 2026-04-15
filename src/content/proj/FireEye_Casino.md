@@ -2,14 +2,13 @@
 title: 'FireEye APT Solutions for Casino'
 projectSizing: '$500k'
 excerpt: 'Deploy Fireeye NX, EX and CM to Casino'
-featuredImage: './images/p1wimax_cat.png'
+featuredImage: './images/fireeye_casino.png'
 projectDate: '2020-03-01'
 publish: true
 categories: ['Cyber Security', 'Finance Services Institute']
 descriptions: 'Deploy NX, EX, CM to Casino HQ'
 ---
 ## Fireeye APT Solutions for Casino
-
 * **Company**   : "Ensign Infosecurity Malaysia"
 * **Country**   : "Malaysia"
 * **Value**     : "$500k"
@@ -18,15 +17,13 @@ descriptions: 'Deploy NX, EX, CM to Casino HQ'
 ---
 
 ## Components - FireEye
-
-- NX Series - Network Security
-- EX Series - Email Security
-- CM Series - Central Management
+* **NX Series** - Network Security
+* **EX Series** - Email Security
+* **CM Series** - Central Management
 
 ### Locations
-
-- The Casino HQ - Kuala Lumpur
-- The Casino Data Center - Genting Highland
+* **The Casino HQ** - Kuala Lumpur
+* **The Casino Data Center** - Genting Highland
 
 ### Project Complexity
 
