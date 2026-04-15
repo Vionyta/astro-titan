@@ -10,7 +10,6 @@ order: 7
 ---
 
 #### Responsibilities / Duties:
-
 - Engineered, planned, deployed, managed and secured core broadband infrastructure services (DNS, DHCP, AAA RADIUS/TACACS+, OpenLDAP, MySQL, BRAS) using primarily open-source platforms (FreeBSD, CentOS, Ubuntu) serving hundred thousands of users.
 - Implemented and maintained hardened configurations for OS (SELinux) and applications (native OS firewall port, hide Application signature) to reduce vendor reliance and strengthen security posture.
 - Developed access control policies, AAA integration, and service entitlement enforcement.
@@ -18,7 +17,6 @@ order: 7
 - Provided Level 4 operational support (24x7 standby) for core services and applications.
 
 #### Skills:
-
 - Secure Service Architecture (Broadband Core) with Open-Source Platform Deployment & Hardening (FreeBSD, CentOS, Ubuntu, OpenBSD)
 - AAA Implementation & Security (OpenRADIUS, TACACS+, OpenLDAP)
 - DDI Security & Management (ISC BIND DNS hardening, ISC DHCP HA)
@@ -28,7 +26,6 @@ order: 7
 - System/Application Change Management & Basic Bash Scripting API Integration (REST API) Juniper Operating System (Junos)
 
 #### Key Achievements:
-
 - Designed & deployed **Malaysia’s first 500Mbps (2016) and 100Mbps (2013) FTTH/O broadband** profiles using hardened open-source systems.
 - Deployed Anycast architecture for Speedtest servers, improving availability to 99.95% and capacity by >500%.
 - Deployed HA designs for critical services:
@@ -40,7 +37,6 @@ order: 7
 - Developed comprehensive monitoring templates (zero cost) from opensource network monitoring system Cacti, improving visibility to 100% and reducing RCA time from days to minutes.
 
 #### Cybersecurity Skills:
-
 - OS Hardening (FreeBSD, CentOS, OpenBSD)
 - Secure Service Design (AAA, DNS, DHCP)
 - Privilege Access Management (PAM) Deployment

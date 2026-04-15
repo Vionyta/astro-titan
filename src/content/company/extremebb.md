@@ -10,7 +10,6 @@ order: 4
 ---
 
 #### Responsibilities / Duties:
-
 - Led 5 cross-functional technical divisions (24 personnel):
   1. NOC
   2. Data Center Network
@@ -23,7 +22,6 @@ order: 4
 - Provided technical leadership, mentorship, and security awareness training across teams.
 
 #### Skills:
-
 - IT Security Governance & Policy (ISO/IEC 27001 Alignment)
 - Risk Assessment & Management
 - Internet Routing Security (BGP Filtering, Peering Policy, RPKI Readiness)
@@ -32,13 +30,11 @@ order: 4
 - Business Process Definition
 
 #### Key Achievements:
-
 - Successfully deployed JBIX (Johor Bahru Internet Exchange), enhancing regional network performance.
 - Initiated and led ISMS ISO 27001 internal audit readiness program, aligning security posture with global standards.
 - Improved infrastructure resiliency via automated patching, asset inventory, and stricter access controls.
 
 #### Cybersecurity Skills:
-
 - ISO/IEC 27001 Governance & Audit
 - Incident Response Planning Risk Assessment & Management
 - BGP Routing Security (Filtering, RPKI)

@@ -3,7 +3,7 @@ export default {
 	printWidth: 200,
 	semi: true,
 	singleQuote: true,
-	tabWidth: 2,
+	tabWidth: 1,
 	trailingComma: 'all',
 	useTabs: true,
 	plugins: ['prettier-plugin-astro'],

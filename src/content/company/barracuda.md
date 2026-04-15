@@ -10,7 +10,6 @@ order: 2
 ---
 
 #### Responsibilities / Duties:
-
 - Served as regional presales technical authority (ASEAN+KR)
 - Barracuda's cybersecurity pillars: Email Protection, Network Security (SASE, ZTNA, NGFW), Data Protection (Backup), Application Security (WAF).
 - Email Protection inclusive on-prem ESG, SaaS based, ATP, Email Awareness training.
@@ -20,7 +19,6 @@ order: 2
 - Provided technical sales support (PoC, demos, proposals, BOMs) and regional technical enablement for partners.
 
 #### Skills:
-
 - Regional Presales Technical Authority (South-East Asia)
 - Email Security Expertise (Email routing, SEG, ATP, Anti-Phishing/Impersonation, DMARC/DKIM/SPF, Basic DLP)
 - Network Security Concepts, configuration and policy (NGFW, SASE, ZTNA, Web Filtering)
@@ -29,7 +27,6 @@ order: 2
 - Regional Partner Enablement Program Development & Delivery
 
 #### Key Achievements:
-
 - Developed & launched successful APAC-SEA partner technical enablement program (“Email Tuesday”), reducing product enquiries by >60%.
 - Technically enabled >50 partners across Asia and served as instructor for Cuda Academy.
 - Successfully supported complex Cloud-to-Cloud Backup & Incident Response deployments in high-compliance sectors (Finance).
@@ -37,7 +34,6 @@ order: 2
 - Obtained CISSP certification.
 
 #### Cybersecurity Skills:
-
 - Email Security (SEG, ATP Sandboxing, Anti-phishing, )
 - Network Security (NGFW, SASE, ZTNA)
 - Application Security (WAF)
