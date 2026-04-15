@@ -12,7 +12,6 @@ order: 8
 #### Responsibilities / Duties:
 
 Wimax Core Network Services, packet-switch. (Pre-4G technology. )
-
 - Oversaw core network dimensioning and utilization projection for 3 years.
 - Defined system health checks/alerts for Network Operation Center (NOC), and managed Level 2 operational support and change requests.
 - Engineered, implemented, and maintained national WiMAX core infrastructure (ASN GW, AAA RADIUS, DNS, DHCP, Home Agent, CGNAT, Cisco SCE/PCEF, PCRF).
@@ -22,7 +21,6 @@ Wimax Core Network Services, packet-switch. (Pre-4G technology. )
 - Conducted system evaluation, integration (e.g., ASN GW with SBC for VoIP), IOT/PoC testing, and project management for Core network expansion and technology selection (LTE/WiMAX).
 
 #### Skills:
-
 - Network Architecture
 - Design (WiMAX Core)
 - Advanced IP Networking (BGP, OSPF, Layer 2/3 Routing, QoS)
@@ -35,7 +33,6 @@ Wimax Core Network Services, packet-switch. (Pre-4G technology. )
 - Project Management
 
 #### Key Achievements:
-
 - Improved core network service availability from 97.5% to 99.99% through architectural redesign and optimization.
 - Architected and deployed resilient core network supporting >250k subscribers, achieving 99.5% SLA compliance.
 - Eliminated nationwide MAC address conflicts by migrating edge network from Layer 2 to Layer 3.
@@ -43,7 +40,6 @@ Wimax Core Network Services, packet-switch. (Pre-4G technology. )
 - Deployed 2nd vendor WiMAX core and managed IP layer migration, increasing availability.
 
 #### Cybersecurity Skills:
-
 - Core Platform Hardening (Linux/BSD)
 - AAA Security Architecture
 - Network Security Concepts (Encrption)
