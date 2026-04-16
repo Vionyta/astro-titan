@@ -4,7 +4,7 @@ import Layout from '@layouts/Layout.astro';
 import InnerHero from '@components/sections/InnerHero.astro';
 import contactHeroImage from '@assets/images/company-hero-wide.jpg';
 
-const companies = await getCollection('company', ({ id }) => !id.startsWith('zh/'));
+const companies = await getCollection('company', ({ id }) => id.startsWith('zh/'));
 const sortedCompanies = companies.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 
 const companiesWithContent = await Promise.all(
@@ -14,8 +14,8 @@ const companiesWithContent = await Promise.all(
 	}),
 );
 
-const title = 'My Carreer History in Detail';
-const description = 'Professional journey across various organizations, where I gain various precious knowledges.';
+const title = '我的职业生涯';
+const description = '我是如何在不同公司里历练成长，获得宝贵的知识和经验。';
 
 const heroContent = {
 	title: title,

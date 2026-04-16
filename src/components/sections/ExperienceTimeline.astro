@@ -1,12 +1,16 @@
 ---
 //import type { renderScript } from 'astro/runtime/server/index.js';
-import { experience } from '../../data/experience';
+import { experience, zhexperience } from '@data/experience';
 //import Layout from '@layouts/Layout.astro';
+
+const currentLocale = Astro.currentLocale ?? "en";
+const isZh = currentLocale === "zh";
+const currentExperience = isZh ? zhexperience : experience;
 ---
 
 <section class="bg-indigo-300 relative py-8">
 	<div class="container mx-auto px-4">
-		<h2 class="text-4xl font-bold text-center mb-4">Brief Working Experience</h2>
+		<h2 class="text-4xl font-bold text-center mb-4">{isZh ? '简述工作经验' : 'Brief Working Experience'}</h2>
 		<div class="relative wrap overflow-hidden p-10 h-full">
 			<div
 				class="border-2-2 absolute border-opacity-20 border-primary-500 h-full border"
@@ -15,7 +19,7 @@ import { experience } from '../../data/experience';
 			</div>
 
 			{
-				experience.map((item, index) => (
+				currentExperience.map((item, index) => (
 					<div
 						class={`mb-4 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row-reverse left-timeline' : 'right-timeline'}`}
 					>
@@ -24,8 +28,8 @@ import { experience } from '../../data/experience';
 						<div class={`order-1 bg-base-100 bg-white rounded-lg shadow-2xl w-11/12 px-6 py-4 timeline-card ${index % 2 === 0 ? 'text-left' : 'text-left'}`}>
 							<h3 class="text-indigo-700 font-bold text-large">{item.company}</h3>
 							<h4 class="text-sm">{item.scope}</h4>
-							<h4 class="text-indigo-500 text-sm font-bold">Title: {item.role}</h4>
-							<h4 class="mb-3 text-sm items-start text-gray-500">Period: {item.startDate} > {item.endDate}</h4>		
+							<h4 class="text-indigo-500 text-sm font-bold">{isZh ? '职位' : 'Title'}: {item.role}</h4>
+							<h4 class="mb-3 text-sm items-start text-gray-500">{isZh ? '期间' : 'Period'}: {item.startDate} > {item.endDate}</h4>		
 							
 							<ul class="list-disc list-inside text-sm">
 								{item.responsibility.map((resp) => (

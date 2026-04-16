@@ -1,8 +1,13 @@
 ---
-import { footerMenu } from '@data/menu'; //legalMenu removed
+import { footerMenu, zhfooterMenu } from '@data/menu'; //legalMenu removed
 import Logo from '@components/Logo.astro';
 import Button from '@components/ui/Button.astro';
+import LanguagePicker from '@components/LanguagePicker.astro';
 //import { siteConfig } from '@data/config';
+
+const currentLocale = Astro.currentLocale ?? "en";
+const isZh = currentLocale === "zh";
+const currentFooterMenu = isZh ? zhfooterMenu : footerMenu;
 
 interface ButtonProps {
 	text: string;
@@ -22,12 +27,12 @@ interface Props {
 const { footerCta } = Astro.props;
 
 const defaultCta = {
-	title: 'Want to know more about my professional journey?',
-	description: 'Click here for detail.',
+	title: isZh ? '想更多地了解我的职业历程吗？' : 'Want to know more about my professional journey?',
+	description: isZh ? '点击这里查看详情。' : 'Click here for detail.',
 	hideCta: true,
 	button: {
-		text: 'Companies',
-		link: '/company',
+		text: isZh ? '工作经历' : 'Companies',
+		link: isZh ? '/zh/company' : '/company',
 		target: '_self',
 	},
 };
@@ -75,7 +80,7 @@ const currentYear = new Date().getFullYear();
 				<nav>
 					<ul class="space-y-2">
 						{
-							footerMenu.map((item) => (
+							currentFooterMenu.map((item) => (
 								<li>
 									<a href={item.link} class="text-body-dark hover:text-white transition-colors">
 										{item.name}
@@ -94,6 +99,10 @@ const currentYear = new Date().getFullYear();
 				© {currentYear}
 				Victor Ong Wai Kit. All rights reserved.
 			</div>
+
+            <div class="mt-4 md:mt-0 text-white">
+                <LanguagePicker />
+            </div>
 
 			<!-- <nav class="mt-4 md:mt-0">
 				<ul class="flex flex-wrap gap-6">
