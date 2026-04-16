@@ -7,7 +7,7 @@ export const prerender = true;
 
 // Get static paths for all possible pages
 export async function getStaticPaths() {
-	const allPosts = await getCollection('proj', ({ id }) => !id.startsWith('zh/'));
+	const allPosts = await getCollection('proj', ({ id }) => id.startsWith('zh/'));
 
 	// Filter posts
 	const filteredPosts = allPosts.filter((post) => {
@@ -45,7 +45,7 @@ const { page, totalPages, posts } = Astro.props;
 
 // Redirect page 1 to the main projects page
 if (page === 1) {
-	return Astro.redirect('/projects');
+	return Astro.redirect('/zh/projects');
 }
 ---
 
@@ -53,7 +53,7 @@ if (page === 1) {
 	{posts}
 	currentPage={page}
 	{totalPages}
-	baseUrl="/projects"
-	title="Projects"
-	subtitle="List of Projects that I handle, deployed or managed"
+	baseUrl="/zh/projects"
+	title="项目经验"
+	subtitle="Victor Ong所做过的项目"
 />

@@ -1,5 +1,5 @@
 ---
-import { categories } from '@data/categories';
+import { getCategoryBySlug } from '@data/categories';
 import HashtagCategory from '@components/ui/HashtagCategory.astro';
 //import Date from '../ui/Date.astro';
 import { Image } from 'astro:assets';
@@ -17,13 +17,17 @@ interface Props {
 }
 
 const { title, projectSizing, featuredImage, projectDate, categories: postCategories, slug, excerpt, descriptions, index } = Astro.props;
+const locale = Astro.currentLocale ?? 'en';
 
-// Validate categories against the valid categories
-const validCategories = postCategories.filter((categoryName: string) => categories.some((category) => category.name === categoryName));
+// Resolve full category objects from slugs to get names (localized)
+const localizedCategories = postCategories.map((slug) => {
+	const category = getCategoryBySlug(slug, locale);
+	return category?.name || slug;
+});
 ---
 
 <a
-	href={`/projects/${slug}`}
+	href={`/${locale === 'zh' ? 'zh/projects' : 'projects'}/${slug}`}
 	class="group flex flex-col h-full overflow-hidden bg-white rounded-lg border border-black transition-all duration-300 hover:border-primary"
 	data-aos="fade-up"
 	data-aos-delay={index * 100}
@@ -44,7 +48,7 @@ const validCategories = postCategories.filter((categoryName: string) => categori
 			{/* Categories as hashtags at the bottom */}
 			<li class="flex flex-wrap">
 				{
-					validCategories.map((categoryName) => (
+					localizedCategories.map((categoryName) => (
 						<div class="text-base text-red-500 category-tag">
 							<HashtagCategory category={categoryName} />
 						</div>

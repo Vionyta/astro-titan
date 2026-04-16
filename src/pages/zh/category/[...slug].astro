@@ -6,22 +6,22 @@ import { projSetting } from '@data/config';
 import { parseProjectDate } from '@utils/date';
 
 export async function getStaticPaths() {
-	// Get all English projects
+	// Get all Chinese projects
 	const allPosts = await getCollection('proj', ({ data, id }) => {
 		const isPublished = import.meta.env.DEV || data.publish !== false;
-		const isEnglish = !id.startsWith('zh/');
-		return isPublished && isEnglish;
+		const isZh = id.startsWith('zh/');
+		return isPublished && isZh;
 	});
 
-	// Get English categories that have at least one project
+	// Get Chinese categories that have at least one project
 	const activeCategories = categories.filter((category) =>
-		category.lang === 'en' && allPosts.some((post) => post.data.categories?.includes(category.slug)),
+		category.lang === 'zh' && allPosts.some((post) => post.data.categories?.includes(category.slug)),
 	);
 
 	// Generate paths only for categories with projects
 	return activeCategories.map((category) => ({
 		params: { slug: category.slug },
-		props: { category },
+		props: { category: category },
 	}));
 }
 
@@ -31,9 +31,9 @@ const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
 // Get posts for this category
 const allCategoryPosts = await getCollection('proj', ({ data, id }) => {
 	const isPublished = import.meta.env.DEV || data.publish !== false;
-	const isEnglish = !id.startsWith('zh/');
+	const isZh = id.startsWith('zh/');
 	const hasCategory = data.categories?.includes(category.slug);
-	return isPublished && isEnglish && hasCategory;
+	return isPublished && isZh && hasCategory;
 });
 
 // Sort posts by date
@@ -55,7 +55,7 @@ const paginatedPosts = sortedPosts.slice(start, end);
 	posts={paginatedPosts}
 	{currentPage}
 	{totalPages}
-	baseUrl={`/category/${category.slug}`}
+	baseUrl={`/zh/category/${category.slug}`}
 	title={category.name}
 	subtitle={category.description}
 	currentCategory={category.name}

@@ -1,12 +1,19 @@
 ---
-import { headerMenu } from '@data/menu';
+import { headerMenu, zhheaderMenu } from '@data/menu';
 import Logo from '@components/Logo.astro';
 import { Menu, X, ChevronDown } from '@lucide/astro';
 import Button from '@components/ui/Button.astro';
+//i18n
+import LanguagePicker from '@components/LanguagePicker.astro';
+//i18n
+const currentLocale = Astro.currentLocale ?? "en";
+// Choose the right menu i18n
+const currentMenu = currentLocale === "zh" ? zhheaderMenu : headerMenu;
 
+//i18n
 const ctaButton = {
-	name: 'Contact Me',
-	link: '/contact',
+	name: currentLocale === "zh" ? '联系我' : 'Contact Me',
+	link: currentLocale === "zh" ? '/zh/contact' : '/contact',
 };
 
 // Get the current path to determine active menu item
@@ -31,7 +38,7 @@ const isCurrentPage = (link: string) => {
 				{/* Desktop Menu */}
 				<ul class="hidden xl:flex xl:gap-1 items-center">
 					{
-						headerMenu.map((item, index) => (
+						currentMenu.map((item, index) => (
 							<li class="relative group">
 								<div class="flex items-center gap-1">
 									<a
@@ -91,7 +98,10 @@ const isCurrentPage = (link: string) => {
 						))
 					}
 				</ul>
-
+				<!--i18n -->
+				<div class="hidden xl:block ml-4">
+					<LanguagePicker />
+				</div>
 				<!-- <Button href={ctaButton.link} variant="primary">{ctaButton.name}</Button> -->
 
 				{/* Mobile Menu Button */}
@@ -110,13 +120,13 @@ const isCurrentPage = (link: string) => {
 
 				{/* Mobile Menu Panel */}
 				<div
-					class="mobile-menu fixed inset-0 z-20 px-8 pt-20 bg-primary lg:hidden hidden opacity-0 scale-95 transform transition-all duration-200 ease-out overflow-y-auto"
+					class="mobile-menu fixed top-0 right-0 bottom-0 w-80 z-20 px-8 pt-20 bg-gray-600/90 backdrop-blur-sm lg:hidden hidden opacity-0 scale-95 transform transition-all duration-200 ease-out overflow-y-auto"
 				>
 					<ul class="flex flex-col gap-4">
 						{
-							headerMenu.map((item) => (
+							currentMenu.map((item) => (
 								<li>
-									<div class="text-white">
+									<div class="text-indigo-700">
 										<div class="flex items-center justify-between">
 											<a
 												href={item.link}
@@ -176,8 +186,12 @@ const isCurrentPage = (link: string) => {
 					</ul>
 
 					{/* Updated mobile CTA button styling */}
-					<div class="mt-8 pb-8">
+					<div class="mt-8 pb-8 flex flex-col gap-6">
 						<Button href={ctaButton.link} variant="ghostLight">{ctaButton.name} </Button>
+						<!-- i18n -->
+						<div class="text-base flex justify-center">
+							<LanguagePicker />
+						</div>
 					</div>
 				</div>
 			</nav>

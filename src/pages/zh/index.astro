@@ -1,0 +1,73 @@
+---
+//src/pages/zh/index.astro 中文
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/sections/Hero.astro';
+import SplitPanel from '@components/sections/SplitPanel.astro';
+import Features from '@components/sections/Features.astro';
+import ExperienceTimeline from '@components/sections/ExperienceTimeline.astro';
+import { zhfeatureLists } from '@data/features';
+import Logos from '@components/sections/Logos.astro';
+import { logoLists } from '@data/logos';
+import heroImage from '@assets/images/home/default-hero-2.jpg';
+import styleGuideImage from '@assets/images/home/wed_800x600.jpg';
+
+const seoTitle = '关于 Victor Ong (王伟杰）';
+const seoDescription = '用生动的网页来介绍我自己';
+
+const styleGuideSection = {
+	eyebrow: '关于我',
+	headline: '我的家在金边，柬埔寨',
+	description:
+		'我与老婆（柬埔寨人民）决定永久定居在金边。这决定带给我本身与工作上很大的改变。让我有机会把我的专业知识应用于柬埔寨的本地文化中，确保我的工作始终具有文化共鸣和影响力。',
+	image: {
+		src: styleGuideImage,
+		alt: 'Featured image',
+	},
+};
+
+const heroContent = {
+	title: '你好,我是 Victor Ong, CISSP #731611',
+	description:
+		'拥有超过二十年在电讯核心网络与应用上设计，部署与管理经验 (Wimax-4G前身，还有光纤核心网）。到国家级/国际互联网交换中心（IX），最后进入网络安全领域。我的职业生涯涵盖了从最终用户、系统集成商、增值分销商到国际网络安全供应商。',
+	buttons: [
+		{
+			text: '工作经验',
+			link: '/zh/company',
+			target: '_self',
+		},
+		{
+			text: '做过的项目',
+			link: '/projects',
+			target: '_self',
+		},
+		{
+			text: '我的证书',
+			link: '/zh/cert',
+			target: '_self',
+		},
+	],
+	backgroundImage: heroImage,
+	overlayOpacity: 0.2,
+};
+
+const featuresSection = {
+	eyebrow: '现有焦点',
+	title: '网络安全领导力与创新',
+	description:
+		'拥有覆盖整个数字防御领域的经验，我已从电讯供应商”核心基础设施工程师“发展成为“网络安全领导者”和“注册信息安全专业人员 (CISSP)”。我的职业生涯以独特的运营商级视角为特征，将深厚的技术根基与托管安全服务提供商和系统集成 (SI) 部门的战略商业管理相结合。',
+	features: zhfeatureLists.main.features,
+};
+
+const logosSection = {
+	eyebrow: '经验覆盖产品',
+	logos: logoLists.main.logos,
+};
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+	<Hero content={heroContent} />
+	<Logos content={logosSection} background="base" padding="small" />
+	<SplitPanel content={styleGuideSection} imagePosition="right" background="light" padding="base" />
+	<Features content={featuresSection} padding="base" background="base" />
+	<ExperienceTimeline />
+</Layout>

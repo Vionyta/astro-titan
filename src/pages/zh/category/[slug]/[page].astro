@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import PaginatedProjLayout from '@components/proj/PaginatedProjLayout.astro';
+import { categories } from '@data/categories';
+import { projSetting } from '@data/config';
+import { parseProjectDate } from '@utils/date';
+
+export async function getStaticPaths() {
+	// Get all projects
+	const allPosts = await getCollection('proj', ({ data }) => {
+		return import.meta.env.DEV || data.publish !== false;
+	});
+
+	// Get categories that have at least one project
+	const activeCategories = categories.filter((category) =>
+		allPosts.some((post) => post.data.categories?.includes(category.name)),
+	);
+
+	// Generate paths for each category and its pages
+	return activeCategories.flatMap((category) => {
+		// Get projects for this category
+		const categoryPosts = allPosts.filter((post) => {
+			const hasCategory = post.data.categories?.includes(category.name);
+			return hasCategory;
+		});
+
+		// Sort projects by date
+		const sortedPosts = categoryPosts.sort((a, b) => {
+		   const dateA = parseProjectDate(a.data.projectDate);
+		   const dateB = parseProjectDate(b.data.projectDate);
+		   return dateB - dateA;
+		});
+
+		const totalPosts = sortedPosts.length;
+		const totalPages = Math.ceil(totalPosts / projSetting.postsPerPage);
+
+		// Create paths for all pages except page 1 (which is handled by [...slug].astro)
+		return Array.from({ length: totalPages - 1 }, (_, i) => {
+			const page = i + 2; // Start from page 2
+			const start = (page - 1) * projSetting.postsPerPage;
+			const end = start + projSetting.postsPerPage;
+
+			return {
+				params: {
+					slug: category.slug,
+					page: String(page),
+				},
+				props: {
+					category,
+					page,
+					totalPages,
+					posts: sortedPosts.slice(start, end),
+				},
+			};
+		});
+	});
+}
+
+const { category, page, totalPages, posts } = Astro.props;
+
+// Redirect page 1 to the main category page
+if (page === 1) {
+	return Astro.redirect(`/zh/category/${category.slug}`);
+}
+---
+
+<PaginatedProjLayout
+	{posts}
+	currentPage={page}
+	{totalPages}
+	baseUrl={`/zh/category/${category.slug}`}
+	title={category.name}
+	subtitle={category.description}
+	currentCategory={category.name}
+/>

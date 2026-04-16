@@ -47,6 +47,14 @@ export default defineConfig({
 			entryLimit: 100, // Increase entry limit if you have many pages
 		}),
 	],
+	i18n: {
+		locales: ["en", "zh"], // Locales you want to support
+		defaultLocale: "en", // Default locale (fallback)
+
+		routing: {
+			prefixDefaultLocale: false, // Disables the /en/ prefix for default locale
+		},
+	},
 	markdown: {
 		shikiConfig: {
 			theme: 'github-dark',

@@ -9,7 +9,7 @@ export const prerender = true;
 const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
 
 // Get all posts without any filtering
-const allPosts = await getCollection('proj', ({ id }) => !id.startsWith('zh/'));
+const allPosts = await getCollection('proj', ({ id }) => id.startsWith('zh/'));
 
 // Then apply filters if needed
 const filteredPosts = allPosts.filter((post) => {
@@ -36,7 +36,7 @@ const paginatedPosts = sortedPosts.slice(start, end);
 	posts={paginatedPosts}
 	{currentPage}
 	{totalPages}
-	baseUrl="/projects"
-	title="Projects"
-	subtitle="Projects that Handle by Victor Ong"
+	baseUrl="/zh/projects"
+	title="项目经验"
+	subtitle="Victor Ong所做过的项目"
 />

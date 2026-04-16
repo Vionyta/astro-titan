@@ -7,7 +7,7 @@ import { Image } from 'astro:assets';
 import { getCategoryBySlug } from '@data/categories';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('proj', ({ id }) => !id.startsWith('zh/'));
+	const posts = await getCollection('proj', ({ id }) => id.startsWith('zh/'));
 	return posts.map((post) => ({
 		params: { slug: post.id },
 		props: { post },
@@ -53,7 +53,7 @@ if (post.data.featuredImage) {
 					post.data.categories && (
 						<div class="flex flex-wrap gap-2">
 							{post.data.categories.map((slug: string) => {
-								const category = getCategoryBySlug(slug, 'en');
+								const category = getCategoryBySlug(slug, 'zh');
 								return <CategoryPill category={category?.name || slug} />;
 							})}
 						</div>
