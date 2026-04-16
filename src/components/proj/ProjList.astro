@@ -1,7 +1,7 @@
 ---
 import ProjPost from './ProjPost.astro';
 import type { CollectionEntry } from 'astro:content';
-import { categories, zhcategories } from '@data/categories';
+import { categories } from '@data/categories';
 import { getCollection } from 'astro:content';
 
 interface Props { posts: CollectionEntry<'proj'>[]; currentCategory?: string; }
@@ -11,7 +11,7 @@ const locale = Astro.currentLocale ?? 'en';
 const isZh = locale === 'zh';
 
 // Get current category list based on locale
-const localeCategories = isZh ? zhcategories : categories;
+const localeCategories = categories.filter(c => c.lang === locale);
 
 // Get all posts for this locale to determine active categories
 const allPosts = await getCollection('proj', ({ data, id }) => {

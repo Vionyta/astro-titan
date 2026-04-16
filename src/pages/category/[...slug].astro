@@ -13,9 +13,9 @@ export async function getStaticPaths() {
 		return isPublished && isEnglish;
 	});
 
-	// Get categories that have at least one project
+	// Get English categories that have at least one project
 	const activeCategories = categories.filter((category) =>
-		allPosts.some((post) => post.data.categories?.includes(category.slug)),
+		category.lang === 'en' && allPosts.some((post) => post.data.categories?.includes(category.slug)),
 	);
 
 	// Generate paths only for categories with projects

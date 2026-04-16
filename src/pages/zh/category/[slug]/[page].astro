@@ -60,7 +60,7 @@ const { category, page, totalPages, posts } = Astro.props;
 
 // Redirect page 1 to the main category page
 if (page === 1) {
-	return Astro.redirect(`/category/${category.slug}`);
+	return Astro.redirect(`/zh/category/${category.slug}`);
 }
 ---
 
@@ -68,7 +68,7 @@ if (page === 1) {
 	{posts}
 	currentPage={page}
 	{totalPages}
-	baseUrl={`/category/${category.slug}`}
+	baseUrl={`/zh/category/${category.slug}`}
 	title={category.name}
 	subtitle={category.description}
 	currentCategory={category.name}
