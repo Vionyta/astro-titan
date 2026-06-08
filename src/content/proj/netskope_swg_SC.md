@@ -10,6 +10,8 @@ descriptions: 'Deploy SaaS based SWG, CASB & RBI'
 ---
 
 ## Netskope SWG for SC
+
+* **Role**      : "Technical Sales & Project Management"
 * **Company**   : "Ensign Infosecurity Malaysia"
 * **Country**   : "Malaysia"
 * **Value**     : "$100k"

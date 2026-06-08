@@ -10,6 +10,7 @@ descriptions: 'Deploy NX, EX, CM and HX to Islamic Bank HQ'
 ---
 ## FireEye APT Solutions for One of the Islamic Bank
 
+* **Role**      : "Engineering & Project Management"
 * **Company**   : "Ensign Infosecurity Malaysia"
 * **Country**   : "Malaysia"
 * **Value**     : "$750k"
