@@ -66,13 +66,14 @@ const currentYear = new Date().getFullYear();
 			)
 		}
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-background-light">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8 border-b border-background-light">
 			<div class="col-span-1 justify-between">
 				<Logo variant="footer" />
 				<ul>
-					<li class="mt-1 text-white text-base font-bold underline">Contact</li>
-					<li class="mt-1 text-white text-sm">Tel: +855 98 449 299</li>
-					<li class="mt-1 text-white text-sm">Mail: waikitong168@gmail.com</li>
+					<li class="mt-1 text-white text-base font-semibold underline">Contact</li>
+					<li class="mt-1 text-white text-bas"><span class="font-bold">Tel:</span> +6011 373 6621 </li>
+					<li class="mt-1 text-white text-base"><span class="font-bold">Tel:</span> +855 98 449 299</li>
+					<li class="mt-1 text-base"><a href="mailto:waikitong168@gmail.com" class="text-white hover:text-gray-300"><span class="font-bold">Mail:</span> waikitong168@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="col-span-1 justify-between">
@@ -91,11 +92,11 @@ const currentYear = new Date().getFullYear();
 					</ul>
 				</nav>
 			</div>
-			<div class="col-span-1 justify-between"></div>
+			<!-- <div class="col-span-1 justify-between"></div> -->
 		</div>
 
 		<div class="mt-8 flex flex-col md:flex-row justify-between items-center">
-			<div class="text-body-dark text-sm">
+			<div class="text-body-dark text-sm text-white">
 				© {currentYear}
 				Victor Ong Wai Kit. All rights reserved.
 			</div>
