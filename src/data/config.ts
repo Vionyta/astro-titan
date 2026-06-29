@@ -14,8 +14,8 @@ export const siteConfig = {
 
 export const SEO = {
 	Separator: '|',
-	SiteName: 'Victor Ong',
-	defaultDescription: 'Victor Ong CISSP',
+	SiteName: 'Victor Ong Wai Kit CISSP',
+	defaultDescription: 'Victor Ong Wai Kit - CISSP',
 };
 
 export const blogSetting = {
