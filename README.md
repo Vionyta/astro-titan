@@ -46,12 +46,13 @@ This page is build on CI/CD concept where development/coding is perform on lapto
 ### 4. ![VSCode](image-1.png)
 [Link](https://code.visualstudio.com/)
 
-### 5. Languages
+### 5. Languages / Module
 - Markdown
 - Nodejs
 - TypeScript
 - Mermaid Chart
 - HTTP
+- i18n (Multi languages)
 <br>
 <br>
 <p>Regards,<br>

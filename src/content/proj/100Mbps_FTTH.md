@@ -10,6 +10,7 @@ descriptions: 'Deploy ASN Gateway to Southern and Central Region for Capacity Ex
 ---
 ## FTTH/FTTO Core Network Services
 
+* **Role**      : "Engineering"
 * **Company**   : "TIME dotcom"
 * **Country**   : "Malaysia"
 * **Value**     : "Over $1mil"
@@ -81,12 +82,12 @@ flowchart LR
 
 ---
 
-### 03-openRadius
+### 03-openRadius (Front-End)
 The openRadius is the RADIUS server for authentication, authorization, and accounting (AAA) for the FTTO/FTTH network. It is used to authenticate users who access the FTTO/FTTH network with proper configure PPPoE speed profile. 
 
 ---
 
-### 04-mySQL Database
+### 04-mySQL Database (Back-End)
 The mySQL is the database server for the FTTO/FTTH network. It is used to store the user information, the PPPoE speed profile, and the accounting information. 
 
 Running on Centos with clustering and replication in place.

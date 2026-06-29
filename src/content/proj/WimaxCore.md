@@ -10,6 +10,7 @@ descriptions: 'Deploy ASN Gateway to Southern and Central Region for Capacity Ex
 ---
 ## Wimax Core Network deployment
 
+* **Role**      : "Engineering"
 * **Company**   : "P1Wimax"
 * **Country**   : "Malaysia"
 * **Value**     : "$250k"

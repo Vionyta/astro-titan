@@ -10,6 +10,8 @@ descriptions: 'Software Based Micro-Segmentation Solution for Telco Core Servers
 ---
 
 ## illumio Micro-Segmentation for Telco
+
+* **Role**      : "Engineering & Project Management"
 * **Company**   : "Ensign Infosecurity Malaysia"
 * **Country**   : "Malaysia"
 * **Value**     : "$100k"

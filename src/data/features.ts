@@ -40,37 +40,37 @@ export const featureLists: Record<string, FeatureList> = {
 				icon: SpeechIcon,
 				title: 'Multilingualism',
 				description:
-					'Ability to speak fluently, read and write in English, Chinese, Cantonese, Malay and Taiwanese. Therefore Strong communication ability to serve regional MNC.',
+					'Fluent in speaking, reading, and writing English, Chinese, Cantonese, Malay, and Taiwanese. This diverse linguistic capability provides a strong communication foundation to effectively serve regional MNCs.',
 			},
 			{
 				icon: NetworkIcon,
-				title: 'Carreer or Telco Grade Network Engineering',
+				title: 'Carrier or Telco Grade Network Engineering',
 				description:
-					'More than 10 years of experinces in Carreer or Telecommunication Grade of Network Design, Implementation and Operations. Ability to produce High-Level, Low-Level Network Diagram, Technical Presentation or translate complex technical solutions into business requirement term.',
+					'With more than 10 years of experience in telecommunication-grade network design, implementation, and operations, I possess a proven ability to produce high-level and low-level network diagrams (HLDs/LLDs) and technical presentations, as well as translate complex technical solutions into clear business requirements.',
 			},
 			{
 				icon: Building2,
 				title: 'Strategic Business Growth',
 				description:
-					'Successfully established and scaled multi-million MYR cybersecurity business lines, improving project profit margins by over 150%',
+					'A proven record of establishing, scaling, and managing multi-million MYR cybersecurity business lines. By optimizing delivery frameworks and structuring high-value solutions, I successfully increased project profit margins by more than 150%',
 			},
 			{
 				icon: Handshake,
 				title: 'Operational Excellence',
 				description:
-					'Proven track record in leading high-performance teams across SOC operations, Service Level Management (SLA), and Critical Incident Oversight.',
+					'A proven track record of leading high-performance teams across NOC or SOC operations, Service Level Management (SLA), and critical incident oversight.',
 			},
 			{
 				icon: ListChecksIcon,
 				title: 'Architectural Resilience',
 				description:
-					'Deep expertise in Zero Trust Architecture, Cloud Security (Azure/AWS), and Network Micro-segmentation.',
+					'Deep expertise in Zero Trust Network Architecture (ZTNA), Cloud Security (Azure/AWS), and Network Micro-segmentation.',
 			},
 			{
 				icon: LandmarkIcon,
 				title: 'Governance & Compliance',
 				description:
-					'Navigating complex regulatory landscapes, including Malaysian BNM RMiT, ISO 27001, PCI DSS, and PDPA',
+					'Extensive experience navigating complex regulatory and risk landscapes. Specialized in aligning enterprise infrastructures with stringent frameworks, including Bank Negara Malaysia\'s Risk Management in Technology (BNM RMiT) policy, Payment Card Industry Data Security Standard (PCI DSS), and the Personal Data Protection Act (PDPA).',
 			},
 			{
 				icon: ShieldHalf,

@@ -9,6 +9,8 @@ categories: ['Cyber Security', 'Finance Services Institute']
 descriptions: 'Deploy NX, EX, CM to Casino HQ'
 ---
 ## Fireeye APT Solutions for Casino
+
+* **Role**      : "Engineering & Project Management"
 * **Company**   : "Ensign Infosecurity Malaysia"
 * **Country**   : "Malaysia"
 * **Value**     : "$500k"
