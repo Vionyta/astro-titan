@@ -44,9 +44,9 @@ export const featureLists: Record<string, FeatureList> = {
 			},
 			{
 				icon: NetworkIcon,
-				title: 'Telco Grade Network Engineering',
+				title: 'Carrier or Telco Grade Network Engineering',
 				description:
-					'More than 10 years of experinces in Telecommunication Grade of Network Design, Implementation and Operations. Ability to produce High-Level, Low-Level Network Diagram, Technical Presentation or translate complex technical solutions into business requirement term.',
+					'More than 10 years of experinces in Carrier or Telecommunication Grade of Network Design, Implementation and Operations. Ability to produce High-Level, Low-Level Network Diagram, Technical Presentation or translate complex technical solutions into business requirement term.',
 			},
 			{
 				icon: Building2,
